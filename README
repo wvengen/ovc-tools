@@ -1,0 +1,26 @@
+OV-chipkaart decoding tools
+---------------------------
+
+The OV-chipkaart is the Dutch RFID-based public transport ticketing system.
+Each traveller needs an OV-chipkaart to travel. This package is an independent
+decoder for the contents of these cards.
+
+It is very much a work in progress, but it's useful already for reading travel
+information. I hope that someday all this information will be fully open, and
+that the card data will be accessible to their holders and the relevant
+transport companies in a secure, transparent and privacy-respecting way.
+
+  ovc-decode    Show a human-readable print of the transactions on a
+                OV-chipkaart dump
+
+  ovc-dump      Show a hexdump of an OV-chipkaart that fits on a large screen
+                if you find that I missed something in the output, let me know
+
+  dplay         Show text files consecutively on screen with differences
+                marked by color. Useful for tracing sequential dumps.
+		Use, for example, like:
+                  for i in *.mfd; do ovc-dump $i >$i.dump; done; dplay *.dump
+
+
+Thanks to all who have helped with this.
+
