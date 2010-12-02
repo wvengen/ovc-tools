@@ -59,7 +59,8 @@ class OvcCompany(int):
 	# most companies can be figured out using
 	# https://www.ov-chipkaart.nl/webwinkel/aanvragen/aanvragen_pkaart/kaartaanvragen/?ovbedrijf=<number>
 	# pending: Breng (Novio), GVU, Hermes, Qbuzz, Syntus
-	# 25 might be Albert Heijn
+	# company 25 is used for credit machines at Albert Heijn, Primera and in Hermes busses
+	# company 26 has been seen as well
 	_strs = {
 		 0: 'TLS',         1: 'Connexxion',  2: 'GVB',        3: 'HTM',
 		 4: 'NS',          5: 'RET',                          7: 'Veolia',
