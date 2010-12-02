@@ -101,17 +101,17 @@ class OvcAmount(float):
 		if self < 1e-6: return '    -  '
 		return '\xe2\x82\xac%6.2f'%self
 
-class FixedWidthInt(int):
+class FixedWidthDec(long):
 	def __new__(cls, x, width=0, **kwargs):
-		i = int.__new__(cls, x)
+		i = long.__new__(cls, x)
 		i._fieldwidth = width
 		return i
 	def __str__(self):
 		return ('%d'%self).zfill(self._fieldwidth)
 
-class FixedWidthHex(int):
+class FixedWidthHex(long):
 	def __new__(cls, x, width=0, **kwargs):
-		i = int.__new__(cls, x)
+		i = long.__new__(cls, x)
 		i._fieldwidth = width
 		return i
 	def __str__(self):

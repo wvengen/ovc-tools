@@ -20,7 +20,7 @@
 
 def getbits(data, start, end):
 	'''Return number at bit positions of bytestring data (msb first)'''
-	val = 0
+	val = 0L
 	for byte in range(start/8, (end+7)/8):
 		bits = 8
 		if byte*8 > end-8: bits = end - byte*8

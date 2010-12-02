@@ -220,6 +220,6 @@ class OvcULTransaction(OvcRecord):
 		('unkQ',      '?', None, FixedWidthHex),
 	]
 	_templates = [
-		('?I II UU UU YT TT TT TV VV VV VV VV WW WW WW WW', {'I':1, 'T':-1}),
+		('?I II UU UU YT TT TT TV VV VV VV VV VV VV VV VV', {'I':1, 'T':-1}),
 	]
 
