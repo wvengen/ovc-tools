@@ -148,7 +148,7 @@ class OvcRecord:
 	def __str__(self):
 		s = ''
 		if self.parsed:
-			if not self.id: s += '     '
+			if self.id is None: s += '     '
 			fields = filter(lambda x: self.__dict__[x] is not None, [x[0] for x in self._fieldchars])
 			s += ' '.join([str(self.__dict__[x]) for x in fields])
 		else:
@@ -196,8 +196,8 @@ class OvcClassicTransaction(OvcRecord):
 	def __init__(self, data):
 		OvcRecord.__init__(self, data)
 		# TODO move this pretty-print stuff to some better place
-		if not self.transfer: self.transfer = '         '
-		if not self.amount: self.amount = '       '
+		if self.transfer is None: self.transfer = '         '
+		if self.amount is None: self.amount = '       '
 		if self.data[0]=='\x08': self.transfer = 'credit   '
 
 	def __str__(self):
