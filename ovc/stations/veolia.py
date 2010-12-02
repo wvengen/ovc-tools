@@ -17,6 +17,8 @@
 #
 
 bus = {
+	10097: 'Heerlen, Station',
+	14590: 'Beek-Elsloo, Station',
 	15116: 'Delft, Centraal Station',
 }
 
