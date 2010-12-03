@@ -1,0 +1,458 @@
+# NS station codes
+# based on
+#  http://home.kpn.nl/judoschaak/treinen/afgiftepunten/afgiftepunten.html
+#  http://home.planet.nl/~schif026/keuzenl.html
+#  http://www.numdex.nl/NSstationnummers.html
+# and many direct observations
+#
+# Still missing:
+#  Amsterdam Holendrecht, Eygelshoven Markt, Groningen Europapark,
+#  Heerlen de Kissel, Mook Molenhoek, Utrecht Maliebaan, Voorst Empe
+#
+company	ovcid	title
+# station/Fe codes
+4	  45	Aalten
+4	  47	Abcoude
+4	  49	Akkrum
+4	  50	Alkmaar
+4	  51	Almelo
+4	  52	Alkmaar Noord
+4	  53	Alphen aan den Rijn
+4	  54	Amersfoort Schothorst
+4	  55	Amersfoort
+4	  56	Amsterdam RAI
+4	  57	Amsterdam Amstel
+4	  58	Amsterdam Centraal
+4	  59	Amsterdam Sloterdijk
+4	  60	Amsterdam Muiderpoort
+4	  61	Amsterdam Zuid/WTC
+4	  65	Anna Paulowna
+4	  66	Apeldoorn
+4	  67	Appingedam
+4	  68	Arkel
+4	  69	Arnemuiden
+4	  71	Arnhem
+4	  72	Arnhem Velperpoort
+4	  73	Assen
+4	  74	Amsterdam Bijlmer ArenA
+4	  75	Arnhem Presikhaaf
+4	  79	Amsterdam Lelylaan
+4	  80	Almere Centrum
+4	  81	Almere Buiten
+4	  82	Almere Muziekwijk
+4	  86	Baarn
+4	  89	Baflo
+4	  90	Barendrecht
+4	  91	Barneveld Centrum
+4	  92	Barneveld Noord
+4	  94	Bedum
+4	  96	Beek-Elsloo
+4	  97	Beesd
+4	 100	Beilen
+4	 104	Almere Parkwijk
+4	 108	Bergen op Zoom
+4	 112	Best
+4	 113	Beverwijk
+4	 114	Bilthoven
+4	 117	Blerick
+4	 118	Bloemendaal
+4	 121	Bodegraven
+4	 124	Borne
+4	 125	Boskoop
+4	 127	Bovenkarspel-Grootebroek
+4	 128	Boxmeer
+4	 129	Boxtel
+4	 131	Breda
+4	 132	Breda Prinsenbeek
+4	 133	Breukelen
+4	 136	Brummen
+4	 139	Buitenpost
+4	 140	Bunde
+4	 141	Bunnik
+4	 145	Bussum Zuid
+4	 147	Capelle Schollevaar
+4	 151	Castricum
+4	 152	Chevremont
+4	 153	Coevorden
+4	 154	Culemborg
+4	 155	Cuijk
+4	 161	Dalen
+4	 163	Diemen Zuid
+4	 164	Daarlerveen
+4	 165	Diemen
+4	 166	Delft Zuid
+4	 167	Dalfsen
+4	 168	Deinum
+4	 169	Delden
+4	 170	Delft
+4	 171	Delfzijl
+4	 172	Deurne
+4	 173	Deventer
+4	 174	Didam
+4	 175	Delfzijl West
+4	 176	Dieren
+4	 177	Doetinchem
+4	 179	Den Dolder
+4	 180	Dordrecht
+4	 181	Dordrecht Zuid
+4	 182	Driebergen-Zeist
+4	 183	Driehuis
+4	 184	Doetinchem de Huet
+4	 185	Deventer Colmschate
+4	 186	Dordrecht Stadspolders
+4	 188	De Vink
+4	 192	Dronrijp
+4	 193	Duiven
+4	 194	Duivendrecht
+4	 195	Echt
+4	 196	Eindhoven Beukenlaan
+4	 200	Ede-Wageningen
+4	 201	Ede Centrum
+4	 204	Emmen Bargeres
+4	 206	Eindhoven
+4	 207	Elst
+4	 208	Emmen
+4	 210	Enkhuizen
+4	 212	Enschede
+4	 216	Ermelo
+4	 217	Enschede de Eschmarke
+4	 218	Etten-Leur
+4	 219	Eijsden
+4	 221	Enschede Drienerlo
+4	 223	Apeldoorn de Maten
+4	 226	Almere Oostvaarders
+4	 227	Arnhem Zuid
+4	 228	Amersfoort Vathorst
+4	 229	Apeldoorn Osseveld
+4	 230	Bovenkarspel Flora
+4	 232	Franeker
+4	 235	Amsterdam Science Park
+4	 239	Geerdijk
+4	 241	Gaanderen
+4	 242	Helmond Brandevoort
+4	 244	Geldermalsen
+4	 245	Geldrop
+4	 246	Geleen Oost
+4	 248	Geleen-Lutterade
+4	 250	Gendringen
+4	 251	Gilze-Rijen
+4	 253	Goes
+4	 254	Goor
+4	 256	Gorinchem
+4	 257	Gouda Goverwelle
+4	 258	Gouda
+4	 259	Gramsbergen
+4	 262	Glanerbrug
+4	 263	Groningen
+4	 264	Groningen Noord
+4	 266	Grou-Jirnsum
+4	 267	Grijpskerk
+4	 270	Haarlem Spaarnwoude
+4	 278	Den Haag Mariahoeve
+4	 279	Den Haag Moerwijk
+4	 280	Den Haag HS
+4	 282	Den Haag Centraal
+4	 285	Haarlem
+4	 292	Hurdegaryp
+4	 293	Hardenberg
+4	 294	Harderwijk
+4	 295	Hardinxveld-Giessendam
+4	 296	Harlingen
+4	 297	Haren
+4	 298	Harlingen Haven
+4	 299	Helmond Brouwhuis
+4	 300	Helmond 't Hout
+4	 301	Heerenveen Ijsstadion
+4	 302	Heemstede-Aerdenhout
+4	 303	Den Helder Zuid
+4	 305	Heerenveen
+4	 306	Heerhugowaard
+4	 307	Heerlen
+4	 308	Heeze
+4	 309	Heiloo
+4	 310	Heino
+4	 311	Den Helder
+4	 312	Hengelo Oost
+4	 313	Helmond
+4	 315	Hemmen-Dodewaard
+4	 316	Hengelo
+4	 317	Heemskerk
+4	 319	's-Hertogenbosch
+4	 320	's-Hertogenbosch Oost
+4	 322	Hilversum
+4	 323	Hindeloopen
+4	 324	Hilversum Noord
+4	 325	Hoek van Holland Haven
+4	 326	Hoensbroek
+4	 327	Hollandsche Rading
+4	 328	Holten
+4	 329	Hillegom
+4	 330	Hoogeveen
+4	 331	Hoogezand-Sappemeer
+4	 332	Hoofddorp
+4	 334	Hoogkarspel
+4	 335	Houten Castellum
+4	 336	Hoorn Kersenboogerd
+4	 337	Hoorn
+4	 338	Eygelshoven
+4	 339	Horst-Sevenum
+4	 340	Houten
+4	 341	Houthem-St. Gerlach
+4	 342	Hoek van Holland Strand
+4	 353	Kampen
+4	 354	Kapelle-Biezelinge
+4	 355	Kerkrade Centrum
+4	 359	Kesteren
+4	 361	Klarenbeek
+4	 362	Klimmen-Ransdaal
+4	 363	Koog Bloemwijk
+4	 364	Koog-Zaandijk
+4	 366	Koudum-Molkwerum
+4	 367	Krabbendijke
+4	 368	Krommenie-Assendelft
+4	 369	Kropswolde
+4	 370	Kruiningen-Yerseke
+4	 379	Den Haag Ypenburg
+4	 380	Den Haag Laan van NOI
+4	 382	Lage Zwaluwe
+4	 384	Leiden Lammenschans
+4	 386	Leerdam
+4	 387	Leeuwarden
+4	 388	't Harde
+4	 389	Leeuwarden Camminghaburen
+4	 390	Leiden Centraal
+4	 393	Leidschendam-Voorburg
+4	 394	Lelystad Centrum
+4	 395	Lichtenvoorde-Groenlo
+4	 399	Lochem
+4	 403	Loppersum
+4	 405	Lunteren
+4	 417	Maarn
+4	 419	Maarssen
+4	 421	Maassluis West
+4	 422	Maassluis
+4	 424	Maastricht
+4	 426	Maastricht Randwijck
+4	 427	Mantgum
+4	 428	Marienberg
+4	 430	Martenshoek
+4	 434	Meerssen
+4	 435	Meppel
+4	 436	Middelburg
+4	 451	Nijmegen Lent
+4	 452	Naarden-Bussum
+4	 454	Nieuw Amsterdam
+4	 455	Nieuwerkerk aan den Ijssel
+4	 457	Nieuweschans
+4	 460	Nieuw Vennep
+4	 466	Nunspeet
+4	 467	Nuth
+4	 468	Nijmegen Heyendaal
+4	 469	Nijkerk
+4	 470	Nijmegen
+4	 472	Nijverdal
+4	 475	Nijmegen Dukenburg
+4	 480	Obdam
+4	 482	Oisterwijk
+4	 483	Oldenzaal
+4	 486	Olst
+4	 487	Ommen
+4	 488	Nijmegen Heyendaal
+4	 489	Oosterbeek
+4	 494	Opheusden
+4	 495	Oss
+4	 496	Oss West
+4	 498	Oudenbosch
+4	 499	Purmerend Weidevenne
+4	 501	Overveen
+4	 505	Rijswijk
+4	 506	Purmerend Overwhere
+4	 507	Rotterdam Alexander
+4	 508	Purmerend
+4	 509	Putten
+4	 510	Pijnacker
+4	 513	Raalte
+4	 515	Ravenstein
+4	 517	Rhenen
+4	 518	Reuver
+4	 519	Rheden
+4	 520	Almelo de Riet
+4	 521	Rilland-Bath
+4	 522	Berkel en Rodenrijs
+4	 523	Roermond
+4	 524	Rosmalen
+4	 525	Roodeschool
+4	 526	Roosendaal
+4	 528	Rotterdam Bergweg
+4	 529	Rotterdam Blaak
+4	 530	Rotterdam Centraal
+4	 531	Rotterdam Noord
+4	 532	Rotterdam Hofplein
+4	 533	Rotterdam Zuid
+4	 534	Rotterdam Stadion
+4	 535	Rotterdam Kleiweg
+4	 536	Rotterdam Wilgenplas
+4	 537	Ruurlo
+4	 538	Rijssen
+4	 542	Rotterdam Lombardijen
+4	 543	Santpoort Noord
+4	 544	Santpoort Zuid
+4	 545	Sappemeer Oost
+4	 547	Sauwerd
+4	 548	Landgraaf
+4	 549	Schagen
+4	 551	Scheemda
+4	 553	Schiedam Centrum
+4	 554	Schinnen
+4	 555	Schin op Geul
+4	 561	Schiphol
+4	 563	Schiedam Nieuwland
+4	 564	Sittard
+4	 565	Sliedrecht
+4	 566	Sneek
+4	 567	Soest
+4	 569	Soestdijk
+4	 570	Hilversum Sportpark
+4	 571	Soest Zuid
+4	 572	Spaubeek
+4	 574	Sneek Noord
+4	 575	Stavoren
+4	 576	Stedum
+4	 578	Steenwijk
+4	 582	Susteren
+4	 583	Swalmen
+4	 591	Tegelen
+4	 592	Terborg
+4	 594	Tilburg West
+4	 596	Tiel
+4	 597	Tilburg
+4	 598	Tilburg Reeshof
+4	 599	Twello
+4	 600	Tiel Passewaaij
+4	 613	Utrecht Zuilen
+4	 614	Utrecht Terwijde
+4	 615	Uitgeest
+4	 617	Uithuizen
+4	 618	Uithuizermeeden
+4	 619	Usquert
+4	 620	Utrecht Overvecht
+4	 621	Utrecht Centraal
+4	 623	Utrecht Lunetten
+4	 627	Veenendaal Centrum
+4	 628	Veenendaal West
+4	 632	Valkenburg
+4	 635	Varsseveld
+4	 637	Veenendaal de Klomp
+4	 638	Veenwouden
+4	 640	Velp
+4	 642	Vlaardingen West
+4	 644	Venlo
+4	 646	Venray
+4	 647	Vierlingsbeek
+4	 649	Vlaardingen Oost
+4	 650	Vlaardingen Centrum
+4	 651	Vleuten
+4	 652	Vlissingen
+4	 653	Vlissingen Souburg
+4	 655	Voorhout
+4	 656	Voerendaal
+4	 658	Voorburg
+4	 659	Voorschoten
+4	 660	Voorburg 't Loo
+4	 661	Vorden
+4	 664	Vriezenveen
+4	 665	Voorhout
+4	 666	Vroomshoop
+4	 667	Vught
+4	 674	Waddinxveen Noord
+4	 675	Waddinxveen
+4	 679	Warffum
+4	 684	Weert
+4	 685	Weesp
+4	 686	Wehl
+4	 690	Wezep
+4	 691	Wierden
+4	 696	Winschoten
+4	 697	Winsum
+4	 698	Winterswijk
+4	 700	Winterswijk West
+4	 702	Woerden
+4	 704	Wolfheze
+4	 705	Wolvega
+4	 706	Workum
+4	 707	Wormerveer
+4	 710	Wijchen
+4	 711	Wijhe
+4	 722	IJlst
+4	 728	Zaandam Kogerveld
+4	 730	Zoetermeer Stadslijn
+4	 731	Zaandam
+4	 732	Zaltbommel
+4	 733	Zandvoort aan Zee
+4	 734	Zetten-Andelst
+4	 735	Zevenaar
+4	 737	Zevenbergen
+4	 739	Zoetermeer Stadslijn
+4	 740	Zoetermeer Oost
+4	 741	Zoetermeer
+4	 742	Zuidbroek
+4	 743	Zuidhorn
+4	 744	Zutphen
+4	 745	Zwaagwesteinde
+4	 747	Zwolle
+4	 752	Zwijndrecht
+# ticket machine codes
+4	 850	Alkmaar
+4	 755	Almelo
+4	 853	Amersfoort
+4	 756	Amsterdam Amstel
+4	 875	Amsterdam Centraal
+4	 876	Amsterdam Centraal
+4	 757	Apeldoorn
+4	 878	Arnhem
+4	 758	Assen
+4	 775	Almere Centrum
+4	 759	Beverwijk
+4	 854	Breda
+4	 778	Delft
+4	 760	Deventer
+4	 761	Dordrecht
+4	 762	Ede-Wageningen
+4	 883	Eindhoven
+4	 763	Enschede
+4	7310	Apeldoorn de Maten
+4	1340	Almere Oostvaarders
+4	6840	Arnhem Zuid
+4	7320	Apeldoorn Osseveld
+4	7020	Gaanderen
+4	5730	Helmond Brandevoort
+4	 764	Gouda
+4	 880	Groningen
+4	 882	Den Haag HS
+4	 895	Den Haag Centraal
+4	 885	Haarlem
+4	 768	Heerenveen
+4	 765	Heerlen
+4	 766	Den Helder
+4	 857	Hengelo
+4	 862	's-Hertogenbosch
+4	 867	Hilversum
+4	 767	Hoorn
+4	 770	Leeuwarden
+4	 888	Leiden Centraal
+4	 890	Maastricht
+4	 771	Middelburg
+4	 869	Naarden-Bussum
+4	 892	Nijmegen
+4	 772	Roermond
+4	 870	Roosendaal
+4	 893	Rotterdam Centraal
+4	 894	Rotterdam Centraal
+4	 881	Schiphol
+4	 773	Sittard
+4	 871	Tilburg
+4	 897	Utrecht Centraal
+4	 872	Venlo
+4	 779	Zaandam
+4	 774	Zutphen
+4	 873	Zwolle

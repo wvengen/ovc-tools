@@ -81,12 +81,13 @@ class OvcStation(int):
 	def __str__(self):
 		# compute maximum length of station name and cache it
 		global _ostwidth
-		if not _ostwidth:
-			for i in range(0,8):
-				_ostwidth = max([_ostwidth] +  [len(x) for x in stations.ovc_get_dict(i).values()])
+		if not _ostwidth: _ostwidth = stations.get_max_len('title')
 		# get station name and pad string
-		s = stations.ovc_get_name(self._obj.company, self)
-		if not s: s = '(station %5d)'%self
+		s = stations.get(self._obj.company, self)
+		if not s or not s.title:
+			s = '(station %5d)'%self
+		else:
+			s = s.title
 		return s + ' '*(_ostwidth-len(s))
 
 class OvcTransactionId(int):

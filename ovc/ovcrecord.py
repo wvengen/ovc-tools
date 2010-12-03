@@ -185,7 +185,11 @@ class OvcClassicTransaction(OvcRecord):
 		( '29 04 55 4T TT TT TV V0 00 M0 00 II IS SS SU UU UU UU UU U0 WW WN NN N? ?? ??'),
 		# special transaction: add product
 		#( '20 00 55 2T TT TT T2 94 00 00 00 U0 00 VV VV VV VV WW WW WW WW' ), # TODO
-		( '20 04 55 4T TT TT TV VV 00 M0 00 II IS SS SU UU UU UU UU U?' ),  # some guesswork
+		   #20 00 55 24 e1 d0 92 94 00 01 d4 c8 00 01 38 7c 68 21 03 f1 80
+		   #20 00 55 24 e1 d0 92 94 00 01 d4 c8 00 01 38 7c 68 21 03 f1 80
+		   #20 00 55 24 e1 d0 92 94 00 01 d4 c8 00 01 48 7c 68 21 03 f2
+		   #20 00 55 24 f5 54 d2 94 00 00 00 20 00 00 38 01 e0 38 27 61 80
+		#( '20 04 55 4T TT TT TV VV 00 M0 00 II IS SS SU UU UU UU UU U?' ),  # some guesswork
 		# special transaction: add money
 		( '08 10 55 0T TT TT TU UU M0 00 0V VS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
 		# subscription

@@ -11,7 +11,8 @@ that the card data will be accessible to their holders and the relevant
 transport companies in a secure, transparent and privacy-respecting way.
 
   ovc-decode    Show a human-readable print of the transactions on a
-                OV-chipkaart dump
+                OV-chipkaart dump. To see station names instead of numbers,
+                you need to run stations/createdb.py first.
 
   ovc-dump      Show a hexdump of an OV-chipkaart that fits on a large screen
                 if you find that I missed something in the output, let me know
