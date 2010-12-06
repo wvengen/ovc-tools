@@ -168,27 +168,34 @@ class OvcClassicTransaction(OvcRecord):
 			('transfer',  'Y',    4, OvcTransfer),
 			('amount',    'N',   16, OvcAmount),
 			('station',   'S',   16, OvcStation),
+
+			# Meaning of ritnr unsure yet; is equal for check-in/checkout and
+			# 28/29-type records. Also same line on same day sometimes can have
+			# the same number here. May be bus number instead.
+			('ritnr',     'J',   40, FixedWidthHex),
+			# Meaning of portnr unsure yet; can be equal when station is equal
+			# but this may be something completely different as well.
+			('portnr',    'K',   24, FixedWidthHex),
+
+			# Unknowns: use each once per template
 			('unkU',      'U', None, FixedWidthHex),
 			('unkV',      'V', None, FixedWidthHex),
 			('unkW',      'W', None, FixedWidthHex),
 			('unkQ',      '?', None, FixedWidthHex),
-			# subscription
+
+			# subscription fields
 			('validfrom', 'R',   14, OvcDate),
 			('validto',   'O',   14, OvcDate),
 	]
 	_templates = [
 		# journey transactions
-		( '28 00 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SU UU UU UN NN N? ?? ??' ),
-		( '28 04 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SU UU UU UU UU UN NN N? ?? ??' ),
+		( '28 00 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SK KK KK KN NN N? ?? ??' ),
+		( '28 04 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SJ JJ JJ JJ JJ JN NN N? ?? ??' ),
 		# 2nd journey log
-		( '29 00 55 4T TT TT TV V0 00 M0 00 II IS SS SU UU UU U0 VV VN NN NW 1? ?? ??' ),
-		( '29 04 55 4T TT TT TV V0 00 M0 00 II IS SS SU UU UU UU UU U0 WW WN NN N? ?? ??'),
+		( '29 00 55 4T TT TT TV V0 00 M0 00 II IS SS SK KK KK K0 VV VN NN NW 1? ?? ??' ),
+		( '29 04 55 4T TT TT TV V0 00 M0 00 II IS SS SJ JJ JJ JJ JJ J0 VV VN NN N? ?? ??'),
 		# special transaction: add product
-		#( '20 00 55 2T TT TT T2 94 00 00 00 U0 00 VV VV VV VV WW WW WW WW' ), # TODO
-		   #20 00 55 24 e1 d0 92 94 00 01 d4 c8 00 01 38 7c 68 21 03 f1 80
-		   #20 00 55 24 e1 d0 92 94 00 01 d4 c8 00 01 38 7c 68 21 03 f1 80
-		   #20 00 55 24 e1 d0 92 94 00 01 d4 c8 00 01 48 7c 68 21 03 f2
-		   #20 00 55 24 f5 54 d2 94 00 00 00 20 00 00 38 01 e0 38 27 61 80
+		#( '20 00 55 2T TT TT T2 94 00 0U UU U0 00 VV VV VV VV WW WW WW WW' ), # TODO
 		#( '20 04 55 4T TT TT TV VV 00 M0 00 II IS SS SU UU UU UU UU U?' ),  # some guesswork
 		# special transaction: add money
 		( '08 10 55 0T TT TT TU UU M0 00 0V VS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
