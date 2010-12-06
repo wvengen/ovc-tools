@@ -177,15 +177,15 @@ class OvcClassicTransaction(OvcRecord):
 			# but this may be something completely different as well.
 			('portnr',    'K',   24, FixedWidthHex),
 
+			# subscription fields
+			('validfrom', 'R',   14, OvcDate),
+			('validto',   'O',   14, OvcDate),
+
 			# Unknowns: use each once per template
 			('unkU',      'U', None, FixedWidthHex),
 			('unkV',      'V', None, FixedWidthHex),
 			('unkW',      'W', None, FixedWidthHex),
 			('unkQ',      '?', None, FixedWidthHex),
-
-			# subscription fields
-			('validfrom', 'R',   14, OvcDate),
-			('validto',   'O',   14, OvcDate),
 	]
 	_templates = [
 		# journey transactions
@@ -200,8 +200,10 @@ class OvcClassicTransaction(OvcRecord):
 		# special transaction: add money
 		( '08 10 55 0T TT TT TU UU M0 00 0V VS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
 		# subscription
-		#( '0a 00 e0 00 40 0U U0 00 00 II I......5 RR RO OO O.........................', {'R':-1}),
-		#( '0a 02 e0 00 40 0U U0 00 00 II I......a RR RO OO O............................', {'R':-1}),
+		#('0a 00 e0 00 40 0U U0 00 00 II I......5 RR RO OO O.........................', {'R':-1}),
+		#('0a 02 e0 00 40 0U U0 00 00 II I......a RR RO OO O............................', {'R':-1}),
+		# subscription: student travel
+		#( '0a 02 e0 02 UU UU U0 00 00 VV VV VV VV RR RO OO OO WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -1}),
 	] 
 
 	def __init__(self, data):
