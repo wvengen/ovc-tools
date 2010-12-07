@@ -34,9 +34,6 @@ def tsv_each(filename):
 			yield dict(zip(fields, data))
 	f.close()
 
-def tsv_filter(filename):
-	'''iterate over lines in tsv file, printing 
-
 def readfile(filename):
 	'''return contents of textfile'''
 	f = open(filename, 'r')
