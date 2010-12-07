@@ -25,12 +25,12 @@ class OvcStation:
 	'''single station'''
 
 	# fields the are always present (irregardless or database, albeit possibly None)
-	_fields = ['company', 'ovcid', 'title', 'zone', 'lonlat']
+	_fields = ['company', 'ovcid', 'title', 'name', 'fullname', 'city', 'zone', 'lonlat']
 
 	def __init__(self, d):
 		self.__dict__.update(dict.fromkeys(self._fields))
 		self.__dict__.update(d)
-
+	
 	def __str__(self):
 		return self.title
 

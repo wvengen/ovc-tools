@@ -1,6 +1,6 @@
 # Connexxion
 #   (still needs to have place names added based on lon/lat)
-company	ovcid	haltenr 	zone	lon      	lat      	title
+company	ovcid	haltenr 	zone	lon      	lat      	name
 1	20014	50310050	5031	 5.3050068	52.0839592	Austerlitzseweg
 1	20012	50310030	5031	 5.2952102	52.0874393	KNVB-Sportcentrum
 1	20011	50310020	5031	 5.2948157	52.0877266	KNVB-Sportcentrum
