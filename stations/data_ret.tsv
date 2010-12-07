@@ -1,12 +1,12 @@
 # RET
-company	ovcid	name
+company	ovcid	city    	name
 # bus
-5	3189	Station Blaak
+5	3189	Rotterdam	Station Blaak
 # tram
-5	3007	Centraal Station
-5	3061	Centraal Station
+5	3007	Rotterdam	Centraal Station
+5	3061	Rotterdam	Centraal Station
 # metro
-5	 507	Station Alexander
-5	 529	Station Blaak
-5	1029	Oostplein
-5	2566	Centraal Station
+5	 507	Rotterdam	Station Alexander
+5	 529	Rotterdam	Station Blaak
+5	1029	Rotterdam	Oostplein
+5	2566	Rotterdam	Centraal Station

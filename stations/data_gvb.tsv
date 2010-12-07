@@ -1,23 +1,23 @@
 # GVB
-company	ovcid	name
+company	ovcid	city    	name
 # bus
-2	20002	Muiderpoortstation
-2	22332	Amstelstation
+2	20002	Amsterdam	Muiderpoortstation
+2	22332	Amsterdam	Amstelstation
 # tram
-2	20854	Jan v. Galenstraat
-2	20947	Mercatorplein
-2	20951	Jan v. Galenstraat
-2	21438	Amsterdam Centraal
-2	21522	Bilderdijkstraat
-2	21525	Kinkerstraat
-2	21584	Museumplein
-2	21585	Museumplein
+2	20854	Amsterdam	Jan v. Galenstraat
+2	20947	Amsterdam	Mercatorplein
+2	20951	Amsterdam	Jan v. Galenstraat
+2	21438	Amsterdam	Amsterdam Centraal
+2	21522	Amsterdam	Bilderdijkstraat
+2	21525	Amsterdam	Kinkerstraat
+2	21584	Amsterdam	Museumplein
+2	21585	Amsterdam	Museumplein
 # metro
-2	 1201	Amsterdam Centraal
-2	 1204	Weesperplein
-2	 1206	Amstelstation
-2	 1207	Spaklerweg
-2	 1208	Van der Madeweg
-2	 1219	Station Bijlmer Arena
-2	 1221	Duivendrecht
-2	 1231	Amsterdam Zuid/WTC
+2	 1201	Amsterdam	Centraal Station
+2	 1204	Amsterdam	Weesperplein
+2	 1206	Amsterdam	Amstelstation
+2	 1207	Amsterdam	Spaklerweg
+2	 1208	Amsterdam	Van der Madeweg
+2	 1219	Amsterdam	Station Bijlmer Arena
+2	 1221	Amsterdam	Duivendrecht
+2	 1231	Amsterdam	Zuid/WTC
