@@ -4,7 +4,14 @@ company	ovcid	name
 2	20002	Muiderpoortstation
 2	22332	Amstelstation
 # tram
+2	20854	Jan v. Galenstraat
+2	20947	Mercatorplein
+2	20951	Jan v. Galenstraat
 2	21438	Amsterdam Centraal
+2	21522	Bilderdijkstraat
+2	21525	Kinkerstraat
+2	21584	Museumplein
+2	21585	Museumplein
 # metro
 2	 1201	Amsterdam Centraal
 2	 1204	Weesperplein
@@ -14,3 +21,4 @@ company	ovcid	name
 2	 1219	Station Bijlmer Arena
 2	 1221	Duivendrecht
 2	 1231	Amsterdam Zuid/WTC
+
