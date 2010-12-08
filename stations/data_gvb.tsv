@@ -5,6 +5,7 @@ company	ovcid	city    	name
 2	22332	Amsterdam	Amstelstation
 # tram
 2	20854	Amsterdam	Jan v. Galenstraat
+2	20855	Amsterdam	Jan v. Galenstraat
 2	20947	Amsterdam	Mercatorplein
 2	20951	Amsterdam	Jan v. Galenstraat
 2	21438	Amsterdam	Amsterdam Centraal
@@ -12,6 +13,7 @@ company	ovcid	city    	name
 2	21525	Amsterdam	Kinkerstraat
 2	21584	Amsterdam	Museumplein
 2	21585	Amsterdam	Museumplein
+2	22386	Amsterdam	Ruysdaelkade
 # metro
 2	 1201	Amsterdam	Centraal Station
 2	 1204	Amsterdam	Weesperplein
