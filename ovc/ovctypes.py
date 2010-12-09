@@ -109,7 +109,7 @@ class FixedWidthDec(long):
 		i._fieldwidth = width
 		return i
 	def __str__(self):
-		return ('%d'%self).zfill(self._fieldwidth)
+		return ('%d'%long(self)).zfill(self._fieldwidth)
 
 class FixedWidthHex(long):
 	def __new__(cls, x, width=0, **kwargs):
