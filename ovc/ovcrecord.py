@@ -195,18 +195,21 @@ class OvcClassicTransaction(OvcRecord):
 		( '28 00 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SK KK KK KN NN NP ?? ??' ),
 		( '28 04 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SJ JJ JJ JJ JJ JN NN NP ?? ??' ),
 		# 2nd journey log
-		( '29 00 55 4T TT TT TV V0 00 M0 00 II IS SS SK KK KK K0 VV VN NN NP 1? ?? ??' ),
-		( '29 04 55 4T TT TT TV V0 00 M0 00 II IS SS SJ JJ JJ JJ JJ J0 VV VN NN NP ?? ??'),
+		( '29 00 55 4T TT TT T0 Y0 00 M0 00 II IS SS SK KK KK K0 UU UN NN NP 1? ?? ??' ),
+		( '29 04 55 4T TT TT T0 Y0 00 M0 00 II IS SS SJ JJ JJ JJ JJ J0 UU UN NN NP ?? ??'),
 		# special transaction: add product
 		#( '20 00 55 2T TT TT T2 94 00 0U UU U0 00 VV VV VV VV WW WW WW WW' ), # TODO
 		#( '20 04 55 4T TT TT TV VV 00 M0 00 II IS SS SU UU UU UU UU U?' ),  # some guesswork
 		# special transaction: add money
+		#   U=3a9 for company 25,26; U=000 otherwise
+		#   ?=0 usually, but for special fare returns at the counter 4,8 has been seen
+		#   W may be ticket machine number
 		( '08 10 55 0T TT TT TU UU M0 00 0V VS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
 		# subscription
 		#('0a 00 e0 00 40 0U U0 00 00 II I......5 RR RO OO O.........................', {'R':-1}),
 		#('0a 02 e0 00 40 0U U0 00 00 II I......a RR RO OO O............................', {'R':-1}),
 		# subscription: student travel
-		#( '0a 02 e0 02 UU UU U0 00 00 VV VV VV VV RR RO OO OO WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -1}),
+		#('0a 02 e0 02 UU UU U0 00 00 VV VV VV VV RR RO OO OO WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -1}),
 	] 
 
 	def __init__(self, data):
