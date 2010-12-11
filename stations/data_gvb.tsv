@@ -16,9 +16,12 @@ company	ovcid	city    	name
 2	21584	Amsterdam	Museumplein
 2	21585	Amsterdam	Museumplein
 2	22386	Amsterdam	Ruysdaelkade
-# metro
+# metro (to verify: 1202, 1203, 1205)
 2	 1201	Amsterdam	Centraal Station
+2	 1202	Amsterdam	Nieuwmarkt
+2	 1203	Amsterdam	Waterlooplein
 2	 1204	Amsterdam	Weesperplein
+2	 1205	Amsterdam	Wibautstraat
 2	 1206	Amsterdam	Amstelstation
 2	 1207	Amsterdam	Spaklerweg
 2	 1208	Amsterdam	Van der Madeweg
