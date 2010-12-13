@@ -192,11 +192,12 @@ class OvcClassicTransaction(OvcRecord):
 	]
 	_templates = [
 		# journey transactions
-		( '28 00 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SK KK KK KN NN NP ?? ??' ),
+		( '28 00 55 4T TT TT T0 Y0 00 M0 00 II IS SS SK KK KK KN NN NP ?? ??' ),
+		( '28 00 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SK KK KK KN NN NP ?? ??' ), # need more data
 		( '28 04 55 6T TT TT T2 94 00 00 Y0 00 M0 00 II IS SS SJ JJ JJ JJ JJ JN NN NP ?? ??' ),
 		# 2nd journey log
-		( '29 00 55 4T TT TT T0 Y0 00 M0 00 II IS SS SK KK KK K0 UU UN NN NP 1? ?? ??' ),
-		( '29 04 55 4T TT TT T0 Y0 00 M0 00 II IS SS SJ JJ JJ JJ JJ J0 UU UN NN NP ?? ??'),
+		( '29 00 55 4T TT TT T0 Y0 00 M0 00 II IS SS SK KK KK KU UU UN NN NP ?? ?? ??' ),
+		( '29 04 55 4T TT TT T0 Y0 00 M0 00 II IS SS SJ JJ JJ JJ JJ JU UU UN NN NP ?? ??'),
 		# special transaction: add product (not really sure; data needed!)
 		#( '20 00 55 2T TT TT T2 94 00 0U UU M0 00 VV VS SS SW WW WW WW WW', {'M':1, 'S':1} ),
 		#( '20 04 55 4T TT TT TV VV 00 M0 00 II IS SS SU UU UU UU UU U?' ),
