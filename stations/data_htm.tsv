@@ -1,0 +1,959 @@
+# HTM
+# based on http://www.htm.net/smartsite.dws?id=NAVIGATIE&kaarttype=0&halte_ids=1,2,3,4,...
+# and google geocoding api administrative_area_level_2
+company	ovcid	city             	name
+3	30201	Den Haag              	Kurhaus
+3	30202	Den Haag              	Kurhaus
+3	30204	Den Haag              	Kurhaus
+3	30205	Den Haag              	Kurhausweg
+3	30206	Den Haag              	Kurhaus
+3	30207	Den Haag              	Zwarte Pad
+3	30208	Den Haag              	Zwarte Pad
+3	30209	Den Haag              	Zwarte Pad
+3	30212	Den Haag              	Zwarte Pad
+3	30214	Den Haag              	Zwarte Pad
+3	30217	Den Haag              	Harstenhoekplein
+3	30218	Den Haag              	Harstenhoekplein
+3	30219	Den Haag              	Stevinstraat
+3	30220	Den Haag              	Stevinstraat
+3	30221	Den Haag              	Gentsestraat
+3	30222	Den Haag              	Gentsestraat
+3	30223	Den Haag              	Duinkerksestraat
+3	30224	Den Haag              	Duinkerksestraat
+3	30225	Den Haag              	Doorniksestraat
+3	30226	Den Haag              	Doorniksestraat
+3	30227	Den Haag              	Pompstationsweg
+3	30228	Den Haag              	Pompstationsweg
+3	30301	Den Haag              	Cremerweg
+3	30302	Den Haag              	Cremerweg
+3	30303	Den Haag              	Wagenaarweg
+3	30304	Den Haag              	Wagenaarweg
+3	30305	Den Haag              	Badhuisweg
+3	30306	Den Haag              	Badhuisweg
+3	30309	Den Haag              	Maurits de Brauwweg
+3	30310	Den Haag              	Maurits de Brauwweg
+3	30311	Den Haag              	Plesmanweg
+3	30312	Den Haag              	Plesmanweg
+3	30401	Den Haag              	Bronovo Ziekenhuis
+3	30402	Den Haag              	Bronovo Ziekenhuis
+3	30403	Den Haag              	Bronovo Ziekenhuis
+3	30404	Den Haag              	Bronovo Ziekenhuis
+3	30405	Den Haag              	Waalsdorperweg
+3	30406	Den Haag              	Waalsdorperweg
+3	30407	Den Haag              	Else Mauhslaan
+3	30408	Den Haag              	Stalpertstraat
+3	30409	Den Haag              	Theo Mann Bouwmeesterlaan
+3	30411	Den Haag              	Oostduinlaan
+3	30412	Den Haag              	Oostduinlaan
+3	30413	Den Haag              	Van der Woertstraat
+3	30414	Den Haag              	Van der Woertstraat
+3	30415	Den Haag              	Ruychrocklaan
+3	30416	Den Haag              	Ruychrocklaan
+3	30417	Den Haag              	Groenhovenstraat
+3	30418	Den Haag              	Groenhovenstraat
+3	30419	Den Haag              	Raamweg
+3	30420	Den Haag              	Raamweg
+3	30427	Den Haag              	Jozef Israelsplein
+3	30428	Den Haag              	Van Hoytemastraat
+3	30429	Den Haag              	Van Hoytemastraat
+3	30430	Den Haag              	Wassenaarseweg
+3	30431	Den Haag              	Wassenaarseweg
+3	30432	Den Haag              	Van Alkemadelaan
+3	30433	Den Haag              	Van Alkemadelaan
+3	30436	Den Haag              	Weissenbruchstraat
+3	30437	Den Haag              	Weissenbruchstraat
+3	30438	Den Haag              	Willem Witsenplein
+3	30439	Den Haag              	Willem Witsenplein
+3	30440	Den Haag              	Breitnerlaan
+3	30441	Den Haag              	Laan van Clingendael
+3	30442	Den Haag              	Laan van Clingendael
+3	30447	Den Haag              	Wassenaarseweg
+3	30448	Den Haag              	Wassenaarseweg
+3	30501	Den Haag              	Ary van der Spuyweg
+3	30502	Den Haag              	Ary van der Spuyweg
+3	30503	Den Haag              	Bankaplein
+3	30504	Den Haag              	Bankaplein
+3	30505	Den Haag              	Riouwstraat
+3	30506	Den Haag              	Riouwstraat
+3	30507	Den Haag              	Vredespaleis
+3	30508	Den Haag              	Vredespaleis
+3	30509	Den Haag              	Vredespaleis
+3	30510	Den Haag              	Nassauplein
+3	30511	Den Haag              	Nassauplein
+3	30513	Den Haag              	Laan Copes van Cattenburch
+3	30514	Den Haag              	Laan Copes van Cattenburch
+3	30515	Den Haag              	Alexanderplein
+3	30516	Den Haag              	Alexanderplein
+3	30519	Den Haag              	Javabrug
+3	30520	Den Haag              	Javabrug
+3	30601	Den Haag              	Madurodam
+3	30602	Den Haag              	Madurodam
+3	30603	Den Haag              	Madurodam
+3	30604	Den Haag              	Madurodam
+3	30605	Den Haag              	Kerkhoflaan
+3	30608	Den Haag              	Madurodam
+3	30701	Den Haag              	Strandweg
+3	30702	Den Haag              	Badhuiskade
+3	30703	Den Haag              	Badhuiskade
+3	30706	Den Haag              	Scheveningseslag
+3	30707	Den Haag              	Scheveningseslag
+3	30708	Den Haag              	Circustheater
+3	30709	Den Haag              	Circustheater
+3	30710	Den Haag              	Vuurbaakstraat
+3	30711	Den Haag              	Vuurbaakstraat
+3	30712	Den Haag              	Stevinstraat
+3	30713	Den Haag              	Stevinstraat
+3	30714	Den Haag              	Keizerstraat
+3	30715	Den Haag              	Keizerstraat
+3	30716	Den Haag              	Duinstraat
+3	30717	Den Haag              	Duinstraat
+3	30718	Den Haag              	Duinstraat
+3	30719	Den Haag              	Duinstraat
+3	30720	Den Haag              	Prins Willemstraat
+3	30721	Den Haag              	Prins Willemstraat
+3	30722	Den Haag              	Duinstraat
+3	30723	Den Haag              	Duinstraat
+3	30724	Den Haag              	Haringkade
+3	30725	Den Haag              	Haringkade
+3	30726	Den Haag              	Nieuwe Parklaan
+3	30727	Den Haag              	Nieuwe Parklaan
+3	30728	Den Haag              	Nieuwe Duinweg
+3	30729	Den Haag              	Nieuwe Duinweg
+3	30730	Den Haag              	Douzastraat
+3	30731	Den Haag              	Douzastraat
+3	30732	Den Haag              	Statenlaan
+3	30733	Den Haag              	Statenlaan
+3	30734	Den Haag              	Rusthoekstraat
+3	30735	Den Haag              	Rusthoekstraat
+3	30736	Den Haag              	Strandweg
+3	30801	Den Haag              	Markenseplein
+3	30802	Den Haag              	Markenseplein
+3	30803	Den Haag              	Tesselseplein
+3	30804	Den Haag              	Tesselseplein
+3	30805	Den Haag              	Tholensestraat
+3	30806	Den Haag              	Tholensestraat
+3	30807	Den Haag              	Nieboerweg
+3	30808	Den Haag              	Nieboerweg
+3	30809	Den Haag              	Markenseplein
+3	30901	Den Haag              	Statenlaan
+3	30902	Den Haag              	Statenlaan
+3	30903	Den Haag              	Van Boetzelaerlaan
+3	30904	Den Haag              	Scheveningseweg
+3	30905	Den Haag              	Scheveningseweg
+3	30906	Den Haag              	Frankenslag
+3	30907	Den Haag              	Frankenslag
+3	30909	Den Haag              	Prins Mauritslaan
+3	30910	Den Haag              	Prins Mauritsplein
+3	30911	Den Haag              	Prins Mauritsplein
+3	30913	Den Haag              	Willem de Zwijgerlaan
+3	30914	Den Haag              	Willem de Zwijgerlaan
+3	30915	Den Haag              	Frederik Hendriklaan
+3	30916	Den Haag              	Frederik Hendriklaan
+3	30917	Den Haag              	Willem de Zwijgerlaan
+3	30918	Den Haag              	Willem de Zwijgerlaan
+3	30919	Den Haag              	World Forum
+3	30920	Den Haag              	World Forum
+3	30921	Den Haag              	World Forum
+3	30922	Den Haag              	World Forum
+3	30923	Den Haag              	Boreelstraat
+3	30924	Den Haag              	Boreelstraat
+3	30925	Den Haag              	Statenplein
+3	30926	Den Haag              	Statenplein
+3	30927	Den Haag              	Statenplein
+3	30928	Den Haag              	Statenplein
+3	30930	Den Haag              	Aert van der Goesstraat
+3	30932	Den Haag              	Van Boetzelaerlaan
+3	30934	Den Haag              	Doornstraat
+3	30935	Den Haag              	Doornstraat
+3	30936	Den Haag              	World Forum
+3	30937	Den Haag              	World Forum
+3	30938	Den Haag              	Johan de Wittlaan
+3	30939	Den Haag              	Johan de Wittlaan
+3	30940	Den Haag              	Van Boetzelaerlaan
+3	30941	Den Haag              	Frankenslag
+3	30942	Den Haag              	Frankenslag
+3	30943	Den Haag              	Van Boetzelaerlaan
+3	30944	Den Haag              	Van Boetzelaerlaan
+3	31001	Den Haag              	Adriaan Goekooplaan
+3	31002	Den Haag              	Adriaan Goekooplaan
+3	31101	Den Haag              	Houtrust
+3	31102	Den Haag              	Houtrust
+3	31103	Den Haag              	Cornelis de Wittlaan
+3	31104	Den Haag              	Gemeentemuseum/Museon
+3	31105	Den Haag              	Gemeentemuseum/Museon
+3	31106	Den Haag              	Gemeentemuseum/Museon
+3	31107	Den Haag              	Gemeentemuseum/Museon
+3	31108	Den Haag              	Groot Hertoginnelaan
+3	31109	Den Haag              	Groot Hertoginnelaan
+3	31110	Den Haag              	Conradkade
+3	31111	Den Haag              	Conradkade
+3	31112	Den Haag              	Valeriusstraat
+3	31113	Den Haag              	Valeriusstraat
+3	31114	Den Haag              	Groot Hertoginnelaan
+3	31115	Den Haag              	Groot Hertoginnelaan
+3	31116	Den Haag              	Groot Hertoginnelaan
+3	31117	Den Haag              	Banstraat
+3	31118	Den Haag              	Banstraat
+3	31119	Den Haag              	Conradkade
+3	31120	Den Haag              	Conradkade
+3	31121	Den Haag              	Van Speijkstraat
+3	31122	Den Haag              	Van Speijkstraat
+3	31123	Den Haag              	Laan van Meerdervoort
+3	31124	Den Haag              	Laan van Meerdervoort
+3	31125	Den Haag              	Cornelis de Wittlaan
+3	31126	Den Haag              	Waldeck Pyrmontkade
+3	31127	Den Haag              	Waldeck Pyrmontkade
+3	31201	Den Haag              	Kwartellaan
+3	31202	Den Haag              	Kwartellaan
+3	31203	Den Haag              	Nieboerweg
+3	31204	Den Haag              	Nieboerweg
+3	31205	Den Haag              	Sportlaan
+3	31206	Den Haag              	Sportlaan
+3	31207	Den Haag              	Haga Ziekenhuis
+3	31208	Den Haag              	Haga Ziekenhuis
+3	31209	Den Haag              	Houtrustweg
+3	31210	Den Haag              	Houtrustweg
+3	31211	Den Haag              	Goudenregenplein
+3	31212	Den Haag              	Goudenregenplein
+3	31213	Den Haag              	Zonnebloemstraat
+3	31214	Den Haag              	Zonnebloemstraat
+3	31217	Den Haag              	Azaleaplein
+3	31218	Den Haag              	Azaleaplein
+3	31301	Den Haag              	Doctor van Welylaan
+3	31302	Den Haag              	Doctor van Welylaan
+3	31303	Den Haag              	Kruisbeklaan
+3	31304	Den Haag              	Kruisbeklaan
+3	31305	Den Haag              	Oude Buizerdlaan
+3	31306	Den Haag              	Oude Buizerdlaan
+3	31307	Den Haag              	Vliegenvangerlaan
+3	31308	Den Haag              	Vliegenvangerlaan
+3	31403	Den Haag              	Muurbloemweg
+3	31404	Den Haag              	Muurbloemweg
+3	31405	Den Haag              	Arabislaan
+3	31406	Den Haag              	Arabislaan
+3	31407	Den Haag              	de Savornin Lohmanlaan
+3	31408	Den Haag              	de Savornin Lohmanlaan
+3	31411	Den Haag              	Aronskelkweg
+3	31412	Den Haag              	Aronskelkweg
+3	31415	Den Haag              	Muurbloemweg
+3	31416	Den Haag              	Muurbloemweg
+3	31417	Den Haag              	Lobelialaan
+3	31418	Den Haag              	Lobelialaan
+3	31419	Den Haag              	de Savornin Lohmanplein
+3	31420	Den Haag              	de Savornin Lohmanplein
+3	31421	Den Haag              	Hoefbladlaan
+3	31422	Den Haag              	Hoefbladlaan
+3	31423	Den Haag              	Hoefbladlaan
+3	31424	Den Haag              	Hoefbladlaan
+3	31425	Den Haag              	Teunisbloemplein
+3	31426	Den Haag              	Teunisbloemplein
+3	31502	Den Haag              	Kijkduin
+3	31504	Den Haag              	Kijkduin Strand
+3	31506	Den Haag              	Kijkduin Strand
+3	31508	Den Haag              	Kijkduinsestraat
+3	31514	Den Haag              	Kijkduinsestraat
+3	31516	Den Haag              	Kijkduinsestraat
+3	31601	Den Haag              	Kraayensteinlaan
+3	31602	Den Haag              	Kraayensteinlaan
+3	31707	Den Haag              	Loosduinse Hoofdstraat
+3	31708	Den Haag              	Loosduinse Hoofdstraat
+3	31709	Den Haag              	Burgemeester Hovylaan
+3	31710	Den Haag              	Burgemeester Hovylaan
+3	31711	Den Haag              	Kapelaan Meereboerweg
+3	31712	Den Haag              	Kapelaan Meereboerweg
+3	31715	Den Haag              	Houtwijklaan
+3	31716	Den Haag              	Houtwijklaan
+3	31717	Den Haag              	Dedemsvaartweg
+3	31718	Den Haag              	Dedemsvaartweg
+3	31719	Den Haag              	Albert Schweitzerlaan
+3	31721	Den Haag              	Albert Schweitzerlaan
+3	31801	Den Haag              	Heliotrooplaan
+3	31802	Den Haag              	Heliotrooplaan
+3	31805	Den Haag              	Pisuissestraat
+3	31806	Den Haag              	Pisuissestraat
+3	31808	Den Haag              	Groen van Prinstererlaan
+3	31809	Den Haag              	Groen van Prinstererlaan
+3	31810	Den Haag              	Buitentuinen
+3	31811	Den Haag              	Buitentuinen
+3	31812	Den Haag              	Mozartlaan
+3	31813	Den Haag              	Mozartlaan
+3	31818	Den Haag              	Arnold Spoelplein
+3	31820	Den Haag              	Arnold Spoelplein
+3	31821	Den Haag              	Arnold Spoelplein
+3	31822	Den Haag              	Louis Armstrongplein
+3	31823	Den Haag              	Louis Armstrongplein
+3	31824	Den Haag              	Buitentuinen
+3	31825	Den Haag              	Buitentuinen
+3	31828	Den Haag              	Binnentuinen
+3	31829	Den Haag              	Binnentuinen
+3	31834	Den Haag              	Pisuissestraat
+3	31835	Den Haag              	Pisuissestraat
+3	31872	Den Haag              	Westduin
+3	31873	Den Haag              	Westduin
+3	31903	Den Haag              	Appelstraat
+3	31904	Den Haag              	Appelstraat
+3	31907	Den Haag              	Colijnplein
+3	31908	Den Haag              	Colijnplein
+3	31911	Den Haag              	Appelstraat
+3	31912	Den Haag              	Appelstraat
+3	31913	Den Haag              	Thorbeckelaan
+3	31914	Den Haag              	Thorbeckelaan
+3	31915	Den Haag              	Perenstraat
+3	31916	Den Haag              	Perenstraat
+3	31917	Den Haag              	Laan van Eik en Duinen
+3	31918	Den Haag              	Laan van Eik en Duinen
+3	31919	Den Haag              	Walnootstraat
+3	31920	Den Haag              	Walnootstraat
+3	31921	Den Haag              	Thorbeckelaan
+3	31922	Den Haag              	Thorbeckelaan
+3	31923	Den Haag              	Okkernootstraat
+3	31924	Den Haag              	Okkernootstraat
+3	32003	Den Haag              	Goudenregenstraat
+3	32004	Den Haag              	Goudenregenstraat
+3	32005	Den Haag              	Fahrenheitstraat
+3	32006	Den Haag              	Fahrenheitstraat
+3	32007	Den Haag              	Fahrenheitstraat
+3	32008	Den Haag              	Fahrenheitstraat
+3	32010	Den Haag              	Valkenbosplein
+3	32011	Den Haag              	Valkenbosplein
+3	32012	Den Haag              	Valkenbosplein
+3	32013	Den Haag              	Valkenbosplein
+3	32015	Den Haag              	Copernicusplein
+3	32016	Den Haag              	Copernicusplein
+3	32017	Den Haag              	Copernicusplein
+3	32018	Den Haag              	Copernicusplein
+3	32019	Den Haag              	Kamperfoeliestraat
+3	32020	Den Haag              	Kamperfoeliestraat
+3	32021	Den Haag              	Weimarstraat
+3	32022	Den Haag              	Weimarstraat
+3	32101	Den Haag              	Laan van Meerdervoort
+3	32102	Den Haag              	Laan van Meerdervoort
+3	32103	Den Haag              	Weimarstraat
+3	32104	Den Haag              	Weimarstraat
+3	32105	Den Haag              	Weimarstraat
+3	32106	Den Haag              	Weimarstraat
+3	32107	Den Haag              	Cartesiusstraat
+3	32108	Den Haag              	Cartesiusstraat
+3	32201	Den Haag              	Waldeck Pyrmontkade
+3	32202	Den Haag              	Waldeck Pyrmontkade
+3	32210	Den Haag              	Van Speijkstraat
+3	32211	Den Haag              	Van Speijkstraat
+3	32212	Den Haag              	Elandstraat
+3	32213	Den Haag              	Elandstraat
+3	32216	Den Haag              	Elandstraat
+3	32217	Den Haag              	Elandstraat
+3	32301	Den Haag              	Javastraat
+3	32302	Den Haag              	Javastraat
+3	32306	Den Haag              	Javastraat
+3	32307	Den Haag              	Mauritskade
+3	32308	Den Haag              	Mauritskade
+3	32309	Den Haag              	Dr. Kuyperstraat
+3	32310	Den Haag              	Dr. Kuyperstraat
+3	32401	Den Haag              	Malieveld
+3	32403	Den Haag              	Malieveld
+3	32501	Den Haag              	Overbosch
+3	32502	Den Haag              	Overbosch
+3	32503	Den Haag              	Reigersbergenweg
+3	32504	Den Haag              	Reigersbergenweg
+3	32505	Den Haag              	Barnsteenhorst
+3	32506	Den Haag              	Barnsteenhorst
+3	32507	Den Haag              	Saffierhorst
+3	32508	Den Haag              	Saffierhorst
+3	32509	Den Haag              	Carel Reinierszkade
+3	32510	Den Haag              	Carel Reinierszkade
+3	32513	Den Haag              	Reigersbergenweg
+3	32514	Den Haag              	Reigersbergenweg
+3	32515	Den Haag              	Vlamenburg
+3	32516	Den Haag              	Vlamenburg
+3	32517	Den Haag              	Hofzichtlaan
+3	32518	Den Haag              	Hofzichtlaan
+3	32519	Den Haag              	Het Kleine Loo
+3	32520	Den Haag              	Het Kleine Loo
+3	32521	Den Haag              	Margarethaland
+3	32522	Den Haag              	Margarethaland
+3	32523	Den Haag              	Margarethaland
+3	32524	Den Haag              	Margarethaland
+3	32525	Den Haag              	Station Mariahoeve
+3	32526	Den Haag              	Station Mariahoeve
+3	32532	Den Haag              	Aegonplein
+3	32533	Den Haag              	Aegonplein
+3	32601	Den Haag              	Centraal Station
+3	32602	Den Haag              	Centraal Station
+3	32603	Den Haag              	Centraal Station
+3	32604	Den Haag              	Centraal Station
+3	32605	Den Haag              	Centraal Station
+3	32606	Den Haag              	Centraal Station
+3	32607	Den Haag              	Centraal Station
+3	32608	Den Haag              	Centraal Station
+3	32609	Den Haag              	Centraal Station
+3	32611	Den Haag              	Centraal Station
+3	32612	Den Haag              	Centraal Station
+3	32613	Den Haag              	Centraal Station
+3	32614	Den Haag              	Centraal Station
+3	32615	Den Haag              	Centraal Station
+3	32616	Den Haag              	Centraal Station
+3	32631	Den Haag              	Prins Clauslaan
+3	32632	Den Haag              	Prins Clauslaan
+3	32633	Den Haag              	Koningin Marialaan
+3	32634	Den Haag              	Koningin Marialaan
+3	32637	Den Haag              	Theresiastraat
+3	32638	Den Haag              	Theresiastraat
+3	32639	Den Haag              	Spaarwaterstraat
+3	32640	Den Haag              	Spaarwaterstraat
+3	32641	Den Haag              	De Eerensplein
+3	32642	Den Haag              	De Eerensplein
+3	32645	Den Haag              	Ternoot
+3	32646	Den Haag              	Ternoot
+3	32647	Den Haag              	Oostinje
+3	32648	Den Haag              	Oostinje
+3	32649	Den Haag              	Juliana van Stolberglaan
+3	32650	Den Haag              	Juliana van Stolberglaan
+3	32651	Den Haag              	Stuyvesantplein
+3	32652	Den Haag              	Stuyvesantplein
+3	32655	Den Haag              	Stuyvesantstraat
+3	32656	Den Haag              	Stuyvesantstraat
+3	32658	Den Haag              	Station Laan van NOI
+3	32659	Den Haag              	Station Laan van NOI
+3	32662	Den Haag              	Beatrixkwartier
+3	32663	Den Haag              	Beatrixkwartier
+3	32682	Den Haag              	Laan van NOI
+3	32683	Den Haag              	Laan van NOI
+3	32703	Den Haag              	Huijgenspark
+3	32705	Den Haag              	Rijswijkseplein/Station HS
+3	32706	Den Haag              	Rijswijkseplein/Station HS
+3	32707	Den Haag              	Rijswijkseplein
+3	32708	Den Haag              	Rijswijkseplein
+3	32711	Den Haag              	Weteringplein
+3	32712	Den Haag              	Weteringplein
+3	32713	Den Haag              	Weteringkade
+3	32714	Den Haag              	Weteringkade
+3	32715	Den Haag              	Rijswijkseplein
+3	32716	Den Haag              	Rijswijkseplein
+3	32717	Den Haag              	Rijswijkseplein
+3	32719	Den Haag              	Station Hollands Spoor
+3	32720	Den Haag              	Station Hollands Spoor
+3	32721	Den Haag              	Station Hollands Spoor
+3	32724	Den Haag              	Station Hollands Spoor
+3	32728	Den Haag              	Station Hollands Spoor
+3	32730	Den Haag              	Station Hollands Spoor
+3	32731	Den Haag              	Station Hollands Spoor
+3	32801	Den Haag              	Noordwal
+3	32802	Den Haag              	Noordwal
+3	32803	Den Haag              	Kneuterdijk
+3	32804	Den Haag              	Kneuterdijk
+3	32805	Den Haag              	Buitenhof
+3	32806	Den Haag              	Buitenhof
+3	32810	Den Haag              	Malieveld
+3	32811	Den Haag              	Malieveld
+3	32812	Den Haag              	Korte Voorhout
+3	32813	Den Haag              	Korte Voorhout
+3	32818	Den Haag              	Gravenstraat
+3	32819	Den Haag              	Gravenstraat
+3	32820	Den Haag              	MCH Westeinde
+3	32821	Den Haag              	Brouwersgracht
+3	32822	Den Haag              	MCH Westeinde
+3	32823	Den Haag              	Brouwersgracht
+3	32824	Den Haag              	Brouwersgracht
+3	32825	Den Haag              	Brouwersgracht
+3	32826	Den Haag              	Brouwersgracht
+3	32828	Den Haag              	Grote Markt
+3	32832	Den Haag              	Centrum
+3	32833	Den Haag              	Centrum
+3	32845	Den Haag              	Amsterdamse Veerkade
+3	32846	Den Haag              	Amsterdamse Veerkade
+3	32849	Den Haag              	Bierkade
+3	32850	Den Haag              	Bierkade
+3	32851	Den Haag              	Bierkade
+3	32852	Den Haag              	Bierkade
+3	32857	Den Haag              	Nieuwe Haven
+3	32858	Den Haag              	Nieuwe Haven
+3	32862	Den Haag              	Kalvermarkt-Stadhuis
+3	32863	Den Haag              	Kalvermarkt-Stadhuis
+3	32873	Den Haag              	Kneuterdijk
+3	32874	Den Haag              	Kneuterdijk
+3	32875	Den Haag              	Brouwersgracht
+3	32880	Den Haag              	Spui
+3	32881	Den Haag              	Spui
+3	32882	Den Haag              	Grote Markt
+3	32883	Den Haag              	Grote Markt
+3	32901	Den Haag              	Loosduinseweg
+3	32902	Den Haag              	Loosduinseweg
+3	32903	Den Haag              	Monstersestraat
+3	32904	Den Haag              	Monstersestraat
+3	32908	Den Haag              	Delftselaan
+3	32909	Den Haag              	Vaillantplein
+3	32910	Den Haag              	Vaillantplein
+3	32911	Den Haag              	Hobbemaplein
+3	32912	Den Haag              	Hobbemaplein
+3	32913	Den Haag              	Hobbemaplein
+3	32914	Den Haag              	Hobbemaplein
+3	32915	Den Haag              	Vaillantlaan
+3	32916	Den Haag              	Vaillantlaan
+3	32917	Den Haag              	Om en Bij
+3	32918	Den Haag              	Om en Bij
+3	32919	Den Haag              	Hoefkade
+3	32920	Den Haag              	Hoefkade
+3	32921	Den Haag              	Wouwermanstraat
+3	32922	Den Haag              	Wouwermanstraat
+3	32923	Den Haag              	Wouwermanstraat
+3	32924	Den Haag              	Wouwermanstraat
+3	32925	Den Haag              	Jacob Catsstraat
+3	32926	Den Haag              	Jacob Catsstraat
+3	32927	Den Haag              	Jacob Catsstraat
+3	32928	Den Haag              	Jacob Catsstraat
+3	32931	Den Haag              	Hobbemaplein
+3	32932	Den Haag              	Hobbemaplein
+3	32934	Den Haag              	Delftselaan
+3	32935	Den Haag              	Delftselaan
+3	33001	Den Haag              	Loosduinseweg
+3	33002	Den Haag              	Loosduinseweg
+3	33003	Den Haag              	De La Reyweg
+3	33004	Den Haag              	De La Reyweg
+3	33005	Den Haag              	Paul Krugerplein
+3	33006	Den Haag              	Paul Krugerplein
+3	33007	Den Haag              	Paul Krugerplein
+3	33008	Den Haag              	Paul Krugerplein
+3	33009	Den Haag              	Schalk Burgerstraat
+3	33010	Den Haag              	Schalk Burgerstraat
+3	33101	Den Haag              	Kamperfoeliestraat
+3	33102	Den Haag              	Kamperfoeliestraat
+3	33103	Den Haag              	Valkenboslaan
+3	33104	Den Haag              	Valkenboslaan
+3	33105	Den Haag              	Loosduinseweg
+3	33106	Den Haag              	Loosduinseweg
+3	33107	Den Haag              	Fahrenheitstraat
+3	33108	Den Haag              	Fahrenheitstraat
+3	33109	Den Haag              	Tienhovenselaan
+3	33110	Den Haag              	Tienhovenselaan
+3	33113	Den Haag              	Escamplaan
+3	33114	Den Haag              	Escamplaan
+3	33115	Den Haag              	Nunspeetlaan
+3	33116	Den Haag              	Nunspeetlaan
+3	33117	Den Haag              	Soestdijkseplein
+3	33118	Den Haag              	Soestdijkseplein
+3	33119	Den Haag              	Soestdijkseplein
+3	33120	Den Haag              	Soestdijkseplein
+3	33121	Den Haag              	De La Reyweg
+3	33122	Den Haag              	De La Reyweg
+3	33123	Den Haag              	Escamplaan
+3	33125	Den Haag              	Barneveldstraat
+3	33126	Den Haag              	Barneveldstraat
+3	33129	Den Haag              	Dierenselaan
+3	33130	Den Haag              	Dierenselaan
+3	33201	Den Haag              	Volendamlaan
+3	33202	Den Haag              	Volendamlaan
+3	33203	Den Haag              	Nieuwendamlaan
+3	33204	Den Haag              	Nieuwendamlaan
+3	33205	Den Haag              	Laan van Eik en Duinen
+3	33206	Den Haag              	Laan van Eik en Duinen
+3	33209	Den Haag              	Escamplaan
+3	33210	Den Haag              	Escamplaan
+3	33211	Den Haag              	Castricumplein
+3	33212	Den Haag              	Castricumplein
+3	33213	Den Haag              	Monnickendamplein
+3	33214	Den Haag              	Monnickendamplein
+3	33215	Den Haag              	Leyenburg
+3	33216	Den Haag              	Leyenburg
+3	33217	Den Haag              	Leyenburg
+3	33218	Den Haag              	Leyenburg
+3	33219	Den Haag              	Zuiderpark
+3	33220	Den Haag              	Zuiderpark
+3	33223	Den Haag              	Monnickendamplein
+3	33224	Den Haag              	Monnickendamplein
+3	33227	Den Haag              	Leyenburg
+3	33228	Den Haag              	Leyenburg
+3	33302	Den Haag              	Drapeniersgaarde
+3	33303	Den Haag              	Drapeniersgaarde
+3	33305	Den Haag              	Beresteinlaan
+3	33306	Den Haag              	Beresteinlaan
+3	33309	Den Haag              	Bouwlustlaan
+3	33310	Den Haag              	Bouwlustlaan
+3	33311	Den Haag              	De Rade
+3	33312	Den Haag              	De Rade
+3	33313	Den Haag              	De Stede
+3	33314	Den Haag              	De Stede
+3	33318	Den Haag              	Beresteinlaan
+3	33319	Den Haag              	Beresteinlaan
+3	33320	Den Haag              	Vrederustlaan
+3	33321	Den Haag              	Vrederustlaan
+3	33322	Den Haag              	Hertenrade
+3	33323	Den Haag              	Hertenrade
+3	33327	Den Haag              	De Dreef
+3	33328	Den Haag              	De Dreef
+3	33330	Den Haag              	Beresteinlaan
+3	33331	Den Haag              	Beresteinlaan
+3	33333	Den Haag              	Vrederustlaan
+3	33334	Den Haag              	Vrederustlaan
+3	33335	Den Haag              	Revalidatiecentrum
+3	33336	Den Haag              	Revalidatiecentrum
+3	33337	Den Haag              	Lozerlaan
+3	33339	Den Haag              	Lozerlaan
+3	33340	Den Haag              	Ambachtsweg
+3	33341	Den Haag              	Ambachtsweg
+3	33342	Den Haag              	Vrederustlaan
+3	33343	Den Haag              	Vrederustlaan
+3	33350	Den Haag              	De Uithof
+3	33357	Den Haag              	Lozerlaan
+3	33358	Den Haag              	Melis Stokelaan
+3	33359	Den Haag              	Melis Stokelaan
+3	33361	Den Haag              	Randveen
+3	33362	Den Haag              	Randveen
+3	33363	Den Haag              	Erasmusweg
+3	33364	Den Haag              	Erasmusweg
+3	33372	Den Haag              	Revalidatiecentrum
+3	33373	Den Haag              	Revalidatiecentrum
+3	33401	Den Haag              	Dedemsvaartweg
+3	33402	Den Haag              	Dedemsvaartweg
+3	33403	Den Haag              	Zuidwoldepad
+3	33404	Den Haag              	Zuidwoldepad
+3	33405	Den Haag              	Meppelweg
+3	33406	Den Haag              	Meppelweg
+3	33407	Den Haag              	Almeloplein
+3	33408	Den Haag              	Almeloplein
+3	33409	Den Haag              	Gramsbergenlaan
+3	33410	Den Haag              	Gramsbergenlaan
+3	33411	Den Haag              	Zweeloostraat
+3	33412	Den Haag              	Zweeloostraat
+3	33413	Den Haag              	Leyweg
+3	33414	Den Haag              	Leyweg
+3	33417	Den Haag              	Leggelostraat
+3	33418	Den Haag              	Leggelostraat
+3	33419	Den Haag              	Melis Stokelaan
+3	33420	Den Haag              	Melis Stokelaan
+3	33422	Den Haag              	Leyweg
+3	33423	Den Haag              	Leyweg
+3	33424	Den Haag              	Loevesteinlaan
+3	33425	Den Haag              	Loevesteinlaan
+3	33426	Den Haag              	Paterswoldestraat
+3	33427	Den Haag              	Paterswoldestraat
+3	33436	Den Haag              	Dalerveenstraat
+3	33437	Den Haag              	Dalerveenstraat
+3	33438	Den Haag              	Fluitenbergstraat
+3	33439	Den Haag              	Fluitenbergstraat
+3	33442	Den Haag              	Steenwijklaan
+3	33443	Den Haag              	Steenwijklaan
+3	33601	Den Haag              	Loevesteinlaan
+3	33602	Den Haag              	Loevesteinlaan
+3	33603	Den Haag              	Zuiderpark
+3	33604	Den Haag              	Zuiderpark
+3	33605	Den Haag              	Moerweg
+3	33606	Den Haag              	Moerweg
+3	33607	Den Haag              	Anna Bijnslaan
+3	33608	Den Haag              	Anna Bijnslaan
+3	33609	Den Haag              	Hardenbroekstraat
+3	33610	Den Haag              	Hardenbroekstraat
+3	33612	Den Haag              	Cannenburglaan
+3	33613	Den Haag              	Cannenburglaan
+3	33614	Den Haag              	Remmersteinstraat
+3	33615	Den Haag              	Remmersteinstraat
+3	33616	Den Haag              	Geysterenweg
+3	33617	Den Haag              	Geysterenweg
+3	33618	Den Haag              	Erasmusplein
+3	33619	Den Haag              	Erasmusplein
+3	33620	Den Haag              	Heeswijkplein
+3	33621	Den Haag              	Heeswijkplein
+3	33624	Den Haag              	Moerweg
+3	33625	Den Haag              	Moerweg
+3	33626	Den Haag              	Station Moerwijk
+3	33627	Den Haag              	Station Moerwijk
+3	33628	Den Haag              	Station Moerwijk
+3	33629	Den Haag              	Station Moerwijk
+3	33701	Den Haag              	Dynamostraat
+3	33702	Den Haag              	Dynamostraat
+3	33708	Den Haag              	Melis Stokelaan
+3	33709	Den Haag              	Melis Stokelaan
+3	33801	Den Haag              	Goudriaankade
+3	33802	Den Haag              	Goudriaankade
+3	33803	Den Haag              	Calandplein
+3	33804	Den Haag              	Calandplein
+3	33805	Den Haag              	Laakkade
+3	33806	Den Haag              	Laakkade
+3	33807	Den Haag              	Neherkade
+3	33808	Den Haag              	Neherkade
+3	33809	Den Haag              	Oudemansstraat
+3	33810	Den Haag              	Oudemansstraat
+3	33813	Den Haag              	Van Musschenbroekstraat
+3	33814	Den Haag              	Van Musschenbroekstraat
+3	33815	Den Haag              	Broeksloot
+3	33817	Den Haag              	Van Zeggelenlaan
+3	33818	Den Haag              	Van Zeggelenlaan
+3	33819	Den Haag              	Jonckbloetplein
+3	33820	Den Haag              	Jonckbloetplein
+3	33821	Den Haag              	Jonckbloetplein
+3	33822	Den Haag              	Jonckbloetplein
+3	33823	Den Haag              	Lorentzplein
+3	33824	Den Haag              	Lorentzplein
+3	33827	Den Haag              	Wenckebachstraat
+3	33828	Den Haag              	Wenckebachstraat
+3	33829	Den Haag              	Alberdingk Thijmstraat
+3	33830	Den Haag              	Alberdingk Thijmstraat
+3	33831	Den Haag              	Ledeganckplein
+3	33832	Den Haag              	Ledeganckplein
+3	33833	Den Haag              	Jan van Beersstraat
+3	33834	Den Haag              	Jan van Beersstraat
+3	33837	Den Haag              	Broeksloot
+3	33838	Den Haag              	Broeksloot
+3	33839	Den Haag              	Leeghwaterplein
+3	33840	Den Haag              	Leeghwaterplein
+3	33841	Den Haag              	Alberdingk Thijmstraat
+3	33842	Den Haag              	Alberdingk Thijmstraat
+3	33843	Den Haag              	Stieltjesstraat
+3	33844	Den Haag              	Stieltjesstraat
+3	33846	Den Haag              	Station Hollands Spoor
+3	33847	Den Haag              	Station Hollands Spoor
+3	33857	Den Haag              	Megastores
+3	33858	Den Haag              	Megastores
+3	33859	Den Haag              	Megastores hoofdingang
+3	33860	Den Haag              	Megastores hoofdingang
+3	33903	Den Haag              	Poolsterstraat
+3	33904	Den Haag              	Poolsterstraat
+3	33905	Den Haag              	Wegastraat
+3	33906	Den Haag              	Wegastraat
+3	33907	Den Haag              	Zonweg
+3	33908	Den Haag              	Zonweg
+3	33909	Den Haag              	Melkwegstraat
+3	33910	Den Haag              	Melkwegstraat
+3	33911	Den Haag              	Saturnusstraat
+3	33916	Den Haag              	Regulusweg
+3	33917	Den Haag              	Regulusweg
+3	33919	Den Haag              	Saturnusstraat
+3	34005	Den Haag              	Lage Veld
+3	34006	Den Haag              	Lage Veld
+3	34009	Den Haag              	Hoge Veld
+3	34010	Den Haag              	Hoge Veld
+3	34011	Den Haag              	Oosteinde
+3	34012	Den Haag              	Oosteinde
+3	34013	Den Haag              	Parijsplein
+3	34014	Den Haag              	Parijsplein
+3	34015	Den Haag              	Carry van Bruggenhof
+3	34016	Den Haag              	Carry van Bruggenhof
+3	35101	Den Haag              	Herenstraat
+3	35102	Den Haag              	Herenstraat
+3	35103	Den Haag              	Herenstraat
+3	35104	Den Haag              	Herenstraat
+3	35105	Den Haag              	Bilderdijklaan
+3	35106	Den Haag              	Geestbrug
+3	35107	Rijswijk              	Hoornbrug
+3	35108	Rijswijk              	Hoornbrug
+3	35205	Den Haag              	Esdoornstraat
+3	35206	Den Haag              	Esdoornstraat
+3	35209	Rijswijk              	Hendrik Ravesteijnplein
+3	35210	Rijswijk              	Hendrik Ravesteijnplein
+3	35211	Den Haag              	Paulus Potterlaan
+3	35212	Den Haag              	Paulus Potterlaan
+3	35215	Rijswijk              	Van Vredenburchweg
+3	35216	Rijswijk              	Van Vredenburchweg
+3	35217	Rijswijk              	Generaal Spoorlaan
+3	35218	Rijswijk              	Generaal Spoorlaan
+3	35301	Rijswijk              	Van Vredenburchweg
+3	35302	Rijswijk              	Van Vredenburchweg
+3	35303	Rijswijk              	Generaal Spoorlaan
+3	35304	Rijswijk              	Generaal Spoorlaan
+3	35305	Den Haag              	Huis te Landelaan
+3	35306	Den Haag              	Huis te Landelaan
+3	35307	Rijswijk              	Rijswijkse Schouwburg
+3	35308	Rijswijk              	Rijswijkse Schouwburg
+3	35309	Rijswijk              	Dr. H. Colijnlaan
+3	35310	Rijswijk              	Dr. H. Colijnlaan
+3	35405	Rijswijk              	In de Bogaard
+3	35406	Rijswijk              	In de Bogaard
+3	35409	Den Haag              	Prinses Beatrixlaan
+3	35410	Den Haag              	Prinses Beatrixlaan
+3	35411	Den Haag              	Rijswijk Station
+3	35412	Den Haag              	Rijswijk Station
+3	35413	Rijswijk              	In de Bogaard
+3	35414	Rijswijk              	In de Bogaard
+3	35421	Den Haag              	Rijswijk Station
+3	35422	Den Haag              	Rijswijk Station
+3	35501	Den Haag              	Sammersweg
+3	35502	Den Haag              	Sammersweg
+3	35503	Rijswijk              	De Schilp
+3	35504	Rijswijk              	De Schilp
+3	35509	Rijswijk              	Minister van den Tempellaan
+3	35510	Rijswijk              	Minister van den Tempellaan
+3	35514	Rijswijk              	Sir Winston Churchilllaan
+3	35515	Rijswijk              	Sir Winston Churchilllaan
+3	35519	Rijswijk              	Prinses Marijkesingel
+3	35520	Rijswijk              	Prinses Marijkesingel
+3	35601	Rijswijk              	Wethouder Brederodelaan
+3	35602	Rijswijk              	Wethouder Brederodelaan
+3	35603	Den Haag              	Albert Schweitzerlaan
+3	35604	Den Haag              	Albert Schweitzerlaan
+3	35605	Rijswijk              	Aletta Jacobsstraat
+3	35606	Rijswijk              	Aletta Jacobsstraat
+3	35613	Rijswijk              	Weidedreef
+3	35614	Rijswijk              	Weidedreef
+3	35615	Rijswijk              	Aletta Jacobsstraat
+3	35616	Rijswijk              	Aletta Jacobsstraat
+3	35617	Rijswijk              	Eikelenburg
+3	35618	Rijswijk              	Eikelenburg
+3	35623	Rijswijk              	Pater Doumenstraat
+3	35624	Rijswijk              	Pater Doumenstraat
+3	35701	Rijswijk              	Admiraal Helfrichsingel
+3	35702	Rijswijk              	Admiraal Helfrichsingel
+3	35703	Rijswijk              	Admiraal Helfrichsingel
+3	35704	Rijswijk              	Admiraal Helfrichsingel
+3	35705	Rijswijk              	Klaroenstraat
+3	35706	Rijswijk              	Klaroenstraat
+3	35839	Rijswijk              	Handelskade
+3	35840	Rijswijk              	Handelskade
+3	35841	Rijswijk              	Patentlaan
+3	35842	Rijswijk              	Patentlaan
+3	35843	Rijswijk              	Volmerlaan
+3	35844	Rijswijk              	Volmerlaan
+3	35846	Den Haag              	Treubstraat
+3	35847	Den Haag              	Treubstraat
+3	35901	Den Haag              	Broekpolder
+3	35902	Den Haag              	Broekpolder
+3	35905	Den Haag              	's-Gravenmade
+3	35906	Den Haag              	's-Gravenmade
+3	35907	Rijswijk              	Verffabriek
+3	35908	Rijswijk              	Verffabriek
+3	35911	Rijswijk              	Vlietbrug
+3	35912	Rijswijk              	Vlietbrug
+3	35934	Rijswijk              	Broekpolder
+3	35935	Rijswijk              	Broekpolder
+3	35936	Rijswijk              	Laan van 's-Gravenmade
+3	35937	Rijswijk              	Laan van 's-Gravenmade
+3	35938	Den Haag              	Laan van Ypenburg
+3	35939	Den Haag              	Laan van Ypenburg
+3	35940	Den Haag              	Plesmanlaan
+3	35941	Den Haag              	Plesmanlaan
+3	35944	Den Haag              	Ypenburg Centrum
+3	35945	Den Haag              	Ypenburg Centrum
+3	35946	Den Haag              	Anthony Fokkersingel
+3	35947	Den Haag              	Anthony Fokkersingel
+3	36019	Den Haag              	Dorpskade
+3	36020	Den Haag              	Dorpskade
+3	36022	Den Haag              	Dorpskade
+3	37002	Den Haag              	Zwartelaan
+3	37003	Leidschendam-Voorburg 	Laan van Heldenburg
+3	37004	Leidschendam-Voorburg 	Laan van Heldenburg
+3	37101	Leidschendam-Voorburg 	Binckhorstlaan
+3	37102	Leidschendam-Voorburg 	Binckhorstlaan
+3	37103	Leidschendam-Voorburg 	Diaconessenhuis
+3	37104	Leidschendam-Voorburg 	Diaconessenhuis
+3	37105	Leidschendam-Voorburg 	Redenburgstraat
+3	37106	Leidschendam-Voorburg 	Laan van Middenburg
+3	37110	Den Haag              	Voorburg Station
+3	37111	Den Haag              	Voorburg Station
+3	37112	Leidschendam-Voorburg 	Sonnenburghlaan
+3	37113	Den Haag              	Voorburg Station
+3	37116	Den Haag              	Voorburg Station
+3	37201	Leidschendam-Voorburg 	Rozenboomlaan
+3	37202	Leidschendam-Voorburg 	Rozenboomlaan
+3	37211	Den Haag              	Leidschendam-Voorburg
+3	37212	Den Haag              	Leidschendam-Voorburg
+3	37411	Leidschendam-Voorburg 	Bruijnings Ingenhoeslaan
+3	37412	Leidschendam-Voorburg 	Bruijnings Ingenhoeslaan
+3	37505	Leidschendam-Voorburg 	Mgr. van Steelaan
+3	37506	Leidschendam-Voorburg 	Mgr. van Steelaan
+3	37507	Den Haag              	Spinozalaan
+3	37508	Den Haag              	Spinozalaan
+3	37509	Den Haag              	Koningin Julianaplein
+3	37510	Den Haag              	Koningin Julianaplein
+3	37601	Den Haag              	Voorburg 't Loo
+3	37602	Den Haag              	Voorburg 't Loo
+3	37603	Den Haag              	Prinses Beatrixlaan
+3	37604	Den Haag              	Prinses Beatrixlaan
+3	37611	Den Haag              	Voorburg 't Loo
+3	37612	Den Haag              	Voorburg 't Loo
+3	37701	Den Haag              	Station Mariahoeve
+3	37702	Den Haag              	Station Mariahoeve
+3	37703	Leidschendam-Voorburg 	Essesteijn
+3	37704	Leidschendam-Voorburg 	Essesteijn
+3	37705	Leidschendam-Voorburg 	Elzendreef
+3	37706	Leidschendam-Voorburg 	Elzendreef
+3	38101	Zoetermeer            	Voorweg Laag
+3	38102	Zoetermeer            	Voorweg Laag
+3	38103	Den Haag              	Centrum - West
+3	38104	Den Haag              	Centrum-West
+3	38105	Delft                 	Stadhuis
+3	38106	Delft                 	Stadhuis
+3	38107	Den Haag              	Palenstein
+3	38108	Den Haag              	Palenstein
+3	38109	Den Haag              	Seghwaert
+3	38110	Den Haag              	Seghwaert
+3	38111	Den Haag              	Leidsewallen
+3	38112	Den Haag              	Leidsewallen
+3	38113	Den Haag              	De Leyens
+3	38114	Den Haag              	De Leyens
+3	38115	Den Haag              	Buytenwegh
+3	38116	Den Haag              	Buytenwegh
+3	38117	Zoetermeer            	Voorweg Hoog
+3	38118	Zoetermeer            	Voorweg Hoog
+3	38119	Zoetermeer            	Meerzicht
+3	38120	Zoetermeer            	Meerzicht
+3	38121	Leidschendam-Voorburg 	Driemanspolder
+3	38122	Leidschendam-Voorburg 	Driemanspolder
+3	38123	Den Haag              	Delftsewallen
+3	38124	Den Haag              	Delftsewallen
+3	38125	Den Haag              	Dorp
+3	38126	Den Haag              	Dorp
+3	38127	Den Haag              	Centrum-West
+3	38128	Den Haag              	Willem Dreeslaan
+3	38129	Den Haag              	Willem Dreeslaan
+3	38130	Den Haag              	Oosterheem
+3	38131	Den Haag              	Oosterheem
+3	38132	Den Haag              	Javalaan
+3	39003	Den Haag              	Brasserskade
+3	39004	Den Haag              	Brasserskade
+3	39005	Den Haag              	Nieuwe Plantage
+3	39006	Den Haag              	Nieuwe Plantage
+3	39007	Delft                 	Wateringsevest
+3	39008	Delft                 	Wateringsevest
+3	39009	Leidschendam-Voorburg 	Prinsenhof
+3	39010	Leidschendam-Voorburg 	Prinsenhof
+3	39017	Den Haag              	Delft Station
+3	39018	Den Haag              	Delft Station
+3	39101	Delft                 	Krakeelpolderweg
+3	39102	Delft                 	Krakeelpolderweg
+3	39103	Den Haag              	Hovenpassage
+3	39104	Den Haag              	Hovenpassage
+3	39105	Den Haag              	Aart van der Leeuwlaan
+3	39106	Den Haag              	Aart van der Leeuwlaan
+3	39107	Den Haag              	Diepenbrockstraat
+3	39108	Den Haag              	Diepenbrockstraat
+3	39109	Den Haag              	Van der Slootsingel
+3	39110	Den Haag              	Van der Slootsingel
+3	39111	Den Haag              	Sadatweg
+3	39112	Den Haag              	Sadatweg
+3	39113	Den Haag              	Bikolaan
+3	39114	Den Haag              	Bikolaan
+3	39115	Den Haag              	Abtswoudsepark
+3	39116	Den Haag              	Abtswoudsepark keerlus
+3	39117	Den Haag              	Abtswoudsepark
+3	39501	Leidschendam-Voorburg 	Leidsenhage
+3	39502	Leidschendam-Voorburg 	Leidsenhage
+3	39503	Den Haag              	Burgemeester Kolfschotenlaan
+3	39504	Den Haag              	Burgemeester Kolfschotenlaan
+3	39505	Leidschendam-Voorburg 	Kastelenring
+3	39506	Leidschendam-Voorburg 	Kastelenring
+3	39507	Leidschendam-Voorburg 	Dillenburgsingel
+3	39508	Leidschendam-Voorburg 	Dillenburgsingel
+3	39509	Leidschendam-Voorburg 	MCH Antoniushove
+3	39521	Leidschendam-Voorburg 	MCH Antoniushove
+3	39580	Leidschendam-Voorburg 	Weigelia
+3	39581	Leidschendam-Voorburg 	Weigelia
+3	39582	Leidschendam-Voorburg 	Oosteinde
+3	39583	Leidschendam-Voorburg 	Oosteinde
+3	39584	Den Haag              	Oude Middenweg
+3	39585	Den Haag              	Oude Middenweg
+3	39586	Den Haag              	Klaverveld
+3	39587	Den Haag              	Klaverveld
+3	39588	Den Haag              	Leidschenveen Centrum
+3	39589	Den Haag              	Leidschenveen Centrum
+3	39590	Den Haag              	Lanen
+3	39591	Den Haag              	Lanen
+3	39594	Den Haag              	Forepark
+3	39595	Den Haag              	Forepark
+3	39596	Den Haag              	Leidschenveen
+3	39597	Den Haag              	Leidschenveen
+3	39810	Den Haag              	Scholekstersingel
+3	39811	Den Haag              	Scholekstersingel
+3	39812	Den Haag              	Gruttosingel
+3	39813	Den Haag              	Gruttosingel
+3	39814	Den Haag              	Nootdorp Centrum
+3	39815	Den Haag              	Nootdorp Centrum
+3	39840	Den Haag              	Station Ypenburg
+3	39841	Den Haag              	Station Ypenburg
