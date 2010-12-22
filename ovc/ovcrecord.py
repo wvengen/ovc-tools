@@ -148,7 +148,6 @@ class OvcRecord:
 	def __str__(self):
 		s = ''
 		if self.parsed:
-			if self.id is None: s += '     '
 			fields = filter(lambda x: self.__dict__[x] is not None, [x[0] for x in self._fieldchars])
 			s += ' '.join([str(self.__dict__[x]) for x in fields])
 		else:
@@ -172,6 +171,8 @@ class OvcClassicTransaction(OvcRecord):
 			# subscription index this journey is done with
 			('subs',      'P',    4, FixedWidthDec), 
 
+			# id of saldo change
+			('idsaldo',   'H',   12, OvcSaldoTransactionId),
 			# Meaning of ritnr unsure yet; is equal for check-in/checkout and
 			# 28/29-type records. Also same line on same day sometimes can have
 			# the same number here. May be bus number instead.
@@ -205,7 +206,7 @@ class OvcClassicTransaction(OvcRecord):
 		#   U=3a9 for company 25,26; U=000 otherwise (same seen in add product)
 		#   ?=0 usually, but for special fare returns at the counter 4,8 has been seen
 		#   W may be ticket machine number
-		( '08 10 55 0T TT TT TU UU M0 00 0V VS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
+		( '08 10 55 0T TT TT TU UU M0 00 HH HS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
 		# subscriptions
 		#('0a 00 e0 00 40 0U U0 00 00 II I......5 RR RO OO O.........................', {'R':-1}),
 		#('0a 02 e0 00 40 0U U0 00 00 II I......a RR RO OO O............................', {'R':-1}),
@@ -216,6 +217,7 @@ class OvcClassicTransaction(OvcRecord):
 	def __init__(self, data):
 		OvcRecord.__init__(self, data)
 		# TODO move this pretty-print stuff to some better place
+		if self.id is None: self.id = '    '
 		if self.transfer is None: self.transfer = '         '
 		if self.amount is None: self.amount = '       '
 		if self.data[0]=='\x08': self.transfer = 'credit   '

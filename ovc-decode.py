@@ -19,7 +19,8 @@
 import sys
 
 from ovc import *
-from ovc.util import mfclassic_getsector
+from ovc.ovctypes import *
+from ovc.util import mfclassic_getsector, getbits
 
 
 if __name__ == '__main__':
@@ -34,7 +35,18 @@ if __name__ == '__main__':
 		inp.close()
 
 		if len(data) == 4096:	# mifare classic 4k
-			# TODO card id, expdate, birthdate, etc.
+			# card details
+			# TODO make the card an object in itself with fixed-position templates
+			# note that these data areas are not yet fully understood
+			cardid = getbits(data[0:4], 0, 4*8)
+			cardtype = OvcCardType(getbits(data[0x10:0x36], 18*8+4, 19*8))
+			validuntil = OvcDate(getbits(data[0x10:0x36], 11*8+6, 13*8+4))
+			s = 'OV-Chipkaart id 0x%06x, %s, valid until %s'%(cardid, cardtype, validuntil)
+			if cardtype==2:
+				birthdate = OvcBcdDate(getbits(mfclassic_getsector(data, 22), 14*8, 18*8))
+				s += ', birthdate %s'%birthdate
+			print s
+
 			# transactions
 			for sector in range(32, 35):
 				sdata = mfclassic_getsector(data, sector)[:-0x10]
@@ -46,6 +58,28 @@ if __name__ == '__main__':
 				for chunk in range(0, len(sdata), 0x20):
 					if ord(sdata[chunk]) == 0: continue
 					print OvcClassicTransaction(sdata[chunk:chunk+0x20])
+
+			# saldo
+			class OvcSaldoTransaction(OvcRecord):
+				_fieldchars = [
+					('id',     'I',   12, OvcTransactionId),
+					('idsaldo','H',   12, OvcSaldoTransactionId),
+					('saldo',  'N',   16, OvcAmountSigned),
+					('unkU',   'U', None, FixedWidthHex),
+					('unkV',   'V', None, FixedWidthHex),
+				]
+				_templates = [
+					('20 II I0 00 00 00 80 HH H0 0N NN N0', {'I':1, 'N':1}),
+				]
+				def __str__(self):
+					s = '[saldo_%02x__] '%(ord(self.data[0]))
+					return s + OvcRecord.__str__(self)
+				
+			sdata = mfclassic_getsector(data, 39)[:-0x10]
+			for chunk in [0x90, 0xa0]:
+				if ord(sdata[chunk]) == 0: continue
+				print OvcSaldoTransaction(sdata[chunk:chunk+0x10])
+				
 
 		elif len(data) == 64:	# mifare ultralight GVB
 			# TODO card id, otp, etc.

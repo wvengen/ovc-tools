@@ -39,5 +39,6 @@ def mfclassic_getsector(data, sector):
 		addr = 0x800 + (sector-32)*length
 	return data[addr:addr+length]
 
-
+def bcd2int(x):
+	return int('%x'%x)
 

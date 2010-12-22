@@ -18,6 +18,7 @@
 
 import datetime
 import stations
+from util import bcd2int
 
 
 def _rfill(s, l):
@@ -46,6 +47,23 @@ class OvcDatetime(datetime.datetime):
 		return d
 	def __str__(self):
 		return self.strftime('%d-%m-%Y %H:%m')
+
+class OvcBcdDate(datetime.date):
+	'''date with ovc-BCD constructor'''
+	def __new__(cls, x, **kwargs):
+		day   = bcd2int((x>> 0)&0xff)
+		month = bcd2int((x>> 8)&0xff)
+		year  = bcd2int((x>>16)&0xffff)
+		if not year: return None
+		return datetime.date.__new__(cls, year, month, day)
+
+class OvcCardType(int):
+	_strs = { 0: 'anonymous', 2: 'personal'}
+	def __new__(cls, x, **kwargs):
+		return int.__new__(cls, x)
+	def __str__(self):
+		try: return self._strs[self]
+		except KeyError: return 'cardtype %d'%self
 
 class OvcTransfer(int):
 	_strs = { 0: 'purchase', 1: 'check-in', 2: 'check-out', 6: 'transfer' }
@@ -96,11 +114,26 @@ class OvcTransactionId(int):
 	def __str__(self):
 		return '#%03d'%self
 
+class OvcSaldoTransactionId(int):
+	def __new__(cls, x,  **kwargs):
+		return int.__new__(cls, x)
+	def __str__(self):
+		return '$%03d'%self
+
 class OvcAmount(float):
+	'''amount in euro; prints '-' when zero'''
 	def __new__(cls, x, **kwargs):
 		return float.__new__(cls, x/100.0)
 	def __str__(self):
 		if self < 1e-6: return '    -  '
+		return '\xe2\x82\xac%6.2f'%self
+
+class OvcAmountSigned(float):
+	'''amount in euro; 16 bit signed number'''
+	def __new__(cls, x, **kwargs):
+ 		x = x - (1<<15)
+		return float.__new__(cls, x/100.0)
+	def __str__(self):
 		return '\xe2\x82\xac%6.2f'%self
 
 class FixedWidthDec(long):
