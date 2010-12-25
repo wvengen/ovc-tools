@@ -2,10 +2,11 @@
 company	ovcid	city    	name
 # bus
 2	20002	Amsterdam	Muiderpoortstation
+2	20030	Amsterdam	Linnaeusparkweg
 2	20310	Amsterdam	Archimedesplantsoen
 2	20318	Amsterdam	Archimedesplantsoen
-2	22332	Amsterdam	Amstelstation
 2	23025	Amsterdam	Science Park Amsterdam
+2	22332	Amsterdam	Amstelstation
 # tram
 2	20854	Amsterdam	Jan v. Galenstraat
 2	20855	Amsterdam	Jan v. Galenstraat
