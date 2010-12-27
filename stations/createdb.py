@@ -27,6 +27,8 @@ def tsv_each(filename):
 	fields = None
 	for line in f:
 		if line.startswith('#'): continue
+		try: line = line[:line.index('#')]
+		except ValueError: pass
 		data = [x.strip() for x in line.decode('utf-8').split('\t')]
 		if not fields:
 			fields = data
