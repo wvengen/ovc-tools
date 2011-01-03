@@ -50,7 +50,7 @@ if __name__ == '__main__':
 	for fn in sys.argv[1:]:
 		if not isfirst: print
 		isfirst = False
-		inp = open(fn, 'r')
+		inp = open(fn, 'rb')
 		data = inp.read()
 		inp.close()
 
