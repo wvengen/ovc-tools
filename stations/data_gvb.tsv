@@ -8,6 +8,8 @@ company	ovcid	city    	name
 2	23025	Amsterdam	Science Park Amsterdam
 2	22332	Amsterdam	Amstelstation
 # tram
+2	20790	Amsterdam	Bloemgracht
+2	20791	Amsterdam	Hugo de Grootplein
 2	20854	Amsterdam	Jan v. Galenstraat
 2	20855	Amsterdam	Jan v. Galenstraat
 2	20947	Amsterdam	Mercatorplein
@@ -15,8 +17,15 @@ company	ovcid	city    	name
 2	21438	Amsterdam	Amsterdam Centraal
 2	21522	Amsterdam	Bilderdijkstraat
 2	21525	Amsterdam	Kinkerstraat
+2	21582	Amsterdam	Van Baerlestraat
 2	21584	Amsterdam	Museumplein
 2	21585	Amsterdam	Museumplein
+2	21735	Amsterdam	Station RAI
+2	21736	Amsterdam	Station RAI
+2	22337	Amsterdam	Victorieplein
+2	22339	Amsterdam	Victorieplein
+2	22340	Amsterdam	Victorieplein
+2	22383	Amsterdam	Ferd. Bolstraat
 2	22386	Amsterdam	Ruysdaelkade
 # metro (to verify: 1202, 1203, 1205)
 2	 1201	Amsterdam	Centraal Station
