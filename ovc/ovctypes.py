@@ -23,9 +23,14 @@ from util import bcd2int
 
 def _rfill(s, l):
 	'''Fill string right with spaces to make as long as longest value in list/dict'''
-	if isinstance(l, str): return s + ' '*max(0, len(l)-len(s))
+	return s + ' '*(_maxlength(l)-len(s))
+
+def _maxlength(l):
+	'''Return maximum length of strings in (nested) list or dict'''
 	if isinstance(l, dict): l = l.values()
-	return s + ' '*(max([len(x) for x in l])-len(s))
+	if isinstance(l, list): return max([_maxlength(x) for x in l])
+	return len(l)
+
 
 class OvcDate(datetime.date):
 	'''date with ovc-integer constructor'''
@@ -89,6 +94,30 @@ class OvcCompany(int):
 	def __str__(self):
 		try: return _rfill(self._strs[self], self._strs)
 		except KeyError: return _rfill('company %d'%self, self._strs)
+
+class OvcSubscription(int):
+	_strs = {
+		 2: {
+ 			0x0bbd: 'Supplement fiets'
+		}, 
+		 4: {
+			0x00af: 'vrijweek09', #could also be kortweek09
+			0x00b1: 'kortweek09', #could also be vrijweek09
+			0x00ca: 'Reizen op saldo (2e klas)',
+			0x00ce: 'Voordeelurenabonnement',
+		},
+		12: {
+			0x09c9: 'studwkvrij', #could also be studwkkort
+			0x09ca: 'studwkkort', #could also be studwkvrij
+		}
+	}
+	def __new__(cls, x, obj, **kwargs):
+		i = int.__new__(cls, x)
+		i._obj = obj
+		return i
+	def __str__(self):
+		try: return _rfill(self._strs[self._obj.company][self], self._strs)
+		except KeyError: return _rfill('subscription %d'%self, self._strs)
 
 _ostwidth = 0
 class OvcStation(int):

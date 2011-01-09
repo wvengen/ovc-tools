@@ -163,13 +163,16 @@ class OvcClassicTransaction(OvcRecord):
 	_fieldchars = [
 			('id',        'I',   12, OvcTransactionId),
 			('date',      'T',   25, OvcDatetime),
+			('validfrom', 'R',   14, OvcDate),
+			('validto',   'O',   14, OvcDate),
 			('company',   'M',    4, OvcCompany),
 			('transfer',  'Y',    4, OvcTransfer),
 			('amount',    'N',   16, OvcAmount),
 			('station',   'S',   16, OvcStation),
+			('subs',      'B',   16, OvcSubscription),
 
 			# subscription index this journey is done with
-			('subs',      'P',    4, FixedWidthDec), 
+			('idsubs',    'P',    4, FixedWidthDec), 
 
 			# id of saldo change
 			('idsaldo',   'H',   12, OvcSaldoTransactionId),
@@ -180,10 +183,6 @@ class OvcClassicTransaction(OvcRecord):
 			# Meaning of portnr unsure yet; can be equal when station is equal
 			# but this may be something completely different as well.
 			('portnr',    'K',   24, FixedWidthHex),
-
-			# subscription fields
-			('validfrom', 'R',   14, OvcDate),
-			('validto',   'O',   14, OvcDate),
 
 			# Unknowns: use each once per template
 			('unkU',      'U', None, FixedWidthHex),
@@ -207,20 +206,22 @@ class OvcClassicTransaction(OvcRecord):
 		#   ?=0 usually, but for special fare returns at the counter 4,8 has been seen
 		#   W may be ticket machine number
 		( '08 10 55 0T TT TT TU UU M0 00 HH HS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
+		( '08 10 55 0T TT TT TU UU M0 00 0V VS SS SW WW WW WW NN NN ?0', {'M':1, 'N':2, 'S':1} ),
 		# subscriptions
-		#('0a 00 e0 00 40 0U U0 00 00 II I......5 RR RO OO O.........................', {'R':-1}),
-		#('0a 02 e0 00 40 0U U0 00 00 II I......a RR RO OO O............................', {'R':-1}),
-		# subscription: student travel
-		#('0a 02 e0 02 UU UU U0 00 00 VV VV VV VV RR RO OO OO WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -1}),
+		( '0a 00 e0 00 MB BB B0 00 00 II IU UU RR RO OO OW WW WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -2, 'O': -1}),
+		( '0a 02 e0 00 MB BB B0 00 00 II IU UU 2a RR RO OO WW WW WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -1} ),
+	        ( '0a 02 e0 00 MB BB B0 00 00 II IU UU 3e RR R0 00 OO OW WW WW WW WW WW WW WW WW WW WW WW WW WW W', {'R': -1} ),
+		( '0a 02 e0 02 MB BB B0 00 00 II IU UU 3e RR R0 00 c2 0W WW WW WW WW WW WW WW WW WW WW WW WW WW W', {'R': -1} ),
 	] 
 
 	def __init__(self, data):
 		OvcRecord.__init__(self, data)
 		# TODO move this pretty-print stuff to some better place
 		if self.id is None: self.id = '    '
-		if self.transfer is None: self.transfer = '         '
-		if self.amount is None: self.amount = '       '
+		if self.transfer is None and self.data[0]!='\x0a': self.transfer = '         '
+		if self.amount is None and self.data[0]!='\x0a': self.amount = '       '
 		if self.data[0]=='\x08': self.transfer = 'credit   '
+		if self.validfrom and not self.validto: self.validto='          '
 
 	def __str__(self):
 		s = '[%02x_%02x_%02x_%x] '%(ord(self.data[0]),ord(self.data[1]),ord(self.data[2]),ord(self.data[3])>>4)
