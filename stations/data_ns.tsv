@@ -3,11 +3,12 @@
 #  http://home.kpn.nl/judoschaak/treinen/afgiftepunten/afgiftepunten.html
 #  http://home.planet.nl/~schif026/keuzenl.html
 #  http://www.numdex.nl/NSstationnummers.html
+#  http://wiki.ovinnederland.nl/
 # and many direct observations
 #
 # Still missing:
-#  Amsterdam Holendrecht, Eygelshoven Markt, Groningen Europapark,
-#  Heerlen de Kissel, Mook Molenhoek, Utrecht Maliebaan, Voorst Empe
+#  Eygelshoven Markt (DB), Groningen Europapark (Arriva),
+#  Heerlen de Kissel (DB, Veolia), Voorst-Empe (NS)
 #
 company	ovcid	name
 # station/Fe codes
@@ -125,6 +126,7 @@ company	ovcid	name
 4	 228	Amersfoort Vathorst
 4	 229	Apeldoorn Osseveld
 4	 230	Bovenkarspel Flora
+4	 231	Amsterdam Holendrecht
 4	 232	Franeker
 4	 235	Amsterdam Science Park
 4	 239	Geerdijk
@@ -201,7 +203,7 @@ company	ovcid	name
 4	 342	Hoek van Holland Strand
 4	 353	Kampen
 4	 354	Kapelle-Biezelinge
-4	 355	Kerkrade Centrum
+4	 355	Kerkrade Centrum # (Veolia)
 4	 359	Kesteren
 4	 361	Klarenbeek
 4	 362	Klimmen-Ransdaal
@@ -239,6 +241,7 @@ company	ovcid	name
 4	 434	Meerssen
 4	 435	Meppel
 4	 436	Middelburg
+4	 446	Mook-Molenhoek # (Veolia)
 4	 451	Nijmegen Lent
 4	 452	Naarden-Bussum
 4	 454	Nieuw Amsterdam
@@ -347,7 +350,7 @@ company	ovcid	name
 4	 640	Velp
 4	 642	Vlaardingen West
 4	 644	Venlo
-4	 646	Venray
+4	 646	Venray # (Veolia)
 4	 647	Vierlingsbeek
 4	 649	Vlaardingen Oost
 4	 650	Vlaardingen Centrum
