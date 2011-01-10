@@ -31,7 +31,7 @@ company	ovcid	city    	name
 2	22340	Amsterdam	Victorieplein
 2	22383	Amsterdam	Ferd. Bolstraat
 2	22386	Amsterdam	Ruysdaelkade
-# metro (to verify: 1202, 1203, 1205)
+# metro (to verify: 1202, 1203, 1205, 1215, 1218, 1220)
 2	 1201	Amsterdam	Centraal Station
 2	 1202	Amsterdam	Nieuwmarkt
 2	 1203	Amsterdam	Waterlooplein
@@ -40,7 +40,11 @@ company	ovcid	city    	name
 2	 1206	Amsterdam	Amstelstation
 2	 1207	Amsterdam	Spaklerweg
 2	 1208	Amsterdam	Van der Madeweg
+2	 1215	Amsterdam	Gein
 2	 1216	Amsterdam	Reigersbos
+2	 1217	Amsterdam	Station Holendrecht
+2	 1218	Amsterdam	Bullewijk
 2	 1219	Amsterdam	Station Bijlmer Arena
+2	 1220	Amsterdam	Strandvliet
 2	 1221	Amsterdam	Duivendrecht
-2	 1231	Amsterdam	Zuid/WTC
+2	 1231	Amsterdam	Station Zuid/WTC
