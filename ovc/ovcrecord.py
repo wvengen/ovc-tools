@@ -198,8 +198,8 @@ class OvcClassicTransaction(OvcRecord):
 		# 2nd journey log
 		( '29 00 55 4T TT TT T0 Y0 00 M0 00 II IS SS SK KK KK KU UU UN NN NP ?? ?? ??' ),
 		( '29 04 55 4T TT TT T0 Y0 00 M0 00 II IS SS SJ JJ JJ JJ JJ JU UU UN NN NP ?? ??'),
-		# special transaction: add product (not really sure; data needed!)
-		#( '20 00 55 2T TT TT T2 94 00 0U UU M0 00 VV VS SS SW WW WW WW WW', {'M':1, 'S':1} ),
+		# special transaction: add product (not really sure; data needed!; W either -1 or 1)
+		( '20 00 55 2T TT TT T2 94 00 0U UU M0 00 II IS SS SV VV VV VW WW', {'U':1, 'M':1, 'I':1, 'S':1, 'W':-1} ),
 		#( '20 04 55 4T TT TT TV VV 00 M0 00 II IS SS SU UU UU UU UU U?' ),
 		# special transaction: add money
 		#   U=3a9 for company 25,26; U=000 otherwise (same seen in add product)
@@ -219,8 +219,9 @@ class OvcClassicTransaction(OvcRecord):
 		# TODO move this pretty-print stuff to some better place
 		if self.id is None: self.id = '    '
 		if self.transfer is None and self.data[0]!='\x0a': self.transfer = '         '
-		if self.amount is None and self.data[0]!='\x0a': self.amount = '       '
+		if self.amount is None and self.data[0] not in ['\x0a', '\x20']: self.amount = '       '
 		if self.data[0]=='\x08': self.transfer = 'credit   '
+		if self.data[0]=='\x20': self.transfer = 'add product      '
 		if self.validfrom and not self.validto: self.validto='          '
 
 	def __str__(self):
