@@ -1,6 +1,8 @@
 # HTM
 # based on http://www.htm.net/smartsite.dws?id=NAVIGATIE&kaarttype=0&halte_ids=1,2,3,4,...
-# and google geocoding api administrative_area_level_2
+# and google geocoding api administrative_area_level_2; this wasn't too good though, and
+# manual updates were needed; a better way would be to get the busstops with lanlot from
+# google maps and match them.
 company	ovcid	city             	name
 3	30201	Den Haag              	Kurhaus
 3	30202	Den Haag              	Kurhaus
@@ -486,10 +488,8 @@ company	ovcid	city             	name
 3	32858	Den Haag              	Nieuwe Haven
 3	32862	Den Haag              	Kalvermarkt-Stadhuis
 3	32863	Den Haag              	Kalvermarkt-Stadhuis
-3	32864	Den Haag              	Buitenhof
-3	32864	Den Haag              	Centrum
-3	32865	Den Haag              	Buitenhof
-3	32865	Den Haag              	Centrum
+3	32864	Den Haag              	Buitenhof	# or: Centrum
+3	32865	Den Haag              	Buitenhof	# or: Centrum
 3	32873	Den Haag              	Kneuterdijk
 3	32874	Den Haag              	Kneuterdijk
 3	32875	Den Haag              	Brouwersgracht
@@ -760,7 +760,6 @@ company	ovcid	city             	name
 3	35103	Den Haag              	Herenstraat
 3	35104	Den Haag              	Herenstraat
 3	35105	Den Haag              	Bilderdijklaan
-3	35106	Den Haag              	Geestbrug
 3	35106	Rijswijk              	Geestbrug
 3	35107	Rijswijk              	Hoornbrug
 3	35108	Rijswijk              	Hoornbrug
@@ -789,14 +788,14 @@ company	ovcid	city             	name
 3	35406	Rijswijk              	In de Bogaard
 3	35409	Den Haag              	Prinses Beatrixlaan
 3	35410	Den Haag              	Prinses Beatrixlaan
-3	35411	Den Haag              	Rijswijk Station
-3	35412	Den Haag              	Rijswijk Station
+3	35411	Rijswijk              	Rijswijk Station
+3	35412	Rijswijk              	Rijswijk Station
 3	35413	Rijswijk              	In de Bogaard
 3	35414	Rijswijk              	In de Bogaard
-3	35421	Den Haag              	Rijswijk Station
-3	35422	Den Haag              	Rijswijk Station
-3	35501	Den Haag              	Sammersweg
-3	35502	Den Haag              	Sammersweg
+3	35421	Rijswijk              	Rijswijk Station
+3	35422	Rijswijk              	Rijswijk Station
+3	35501	Rijswijk              	Sammersweg
+3	35502	Rijswijk              	Sammersweg
 3	35503	Rijswijk              	De Schilp
 3	35504	Rijswijk              	De Schilp
 3	35509	Rijswijk              	Minister van den Tempellaan
@@ -807,8 +806,8 @@ company	ovcid	city             	name
 3	35520	Rijswijk              	Prinses Marijkesingel
 3	35601	Rijswijk              	Wethouder Brederodelaan
 3	35602	Rijswijk              	Wethouder Brederodelaan
-3	35603	Den Haag              	Albert Schweitzerlaan
-3	35604	Den Haag              	Albert Schweitzerlaan
+3	35603	Rijswijk              	Albert Schweitzerlaan
+3	35604	Rijswijk              	Albert Schweitzerlaan
 3	35605	Rijswijk              	Aletta Jacobsstraat
 3	35606	Rijswijk              	Aletta Jacobsstraat
 3	35613	Rijswijk              	Weidedreef
@@ -862,42 +861,38 @@ company	ovcid	city             	name
 3	37002	Den Haag              	Zwartelaan
 3	37003	Leidschendam-Voorburg 	Laan van Heldenburg
 3	37004	Leidschendam-Voorburg 	Laan van Heldenburg
-3	37101	Den Haag              	Binckhorstlaan
 3	37101	Leidschendam-Voorburg 	Binckhorstlaan
-3	37102	Den Haag              	Binckhorstlaan
 3	37102	Leidschendam-Voorburg 	Binckhorstlaan
 3	37103	Leidschendam-Voorburg 	Diaconessenhuis
 3	37104	Leidschendam-Voorburg 	Diaconessenhuis
 3	37105	Leidschendam-Voorburg 	Redenburgstraat
 3	37106	Leidschendam-Voorburg 	Laan van Middenburg
-3	37110	Den Haag              	Voorburg Station
-3	37111	Den Haag              	Voorburg Station
+3	37110	Leidschendam-Voorburg 	Voorburg Station
+3	37111	Leidschendam-Voorburg 	Voorburg Station
 3	37112	Leidschendam-Voorburg 	Sonnenburghlaan
-3	37113	Den Haag              	Voorburg Station
-3	37116	Den Haag              	Voorburg Station
+3	37113	Leidschendam-Voorburg 	Voorburg Station
+3	37116	Leidschendam-Voorburg 	Voorburg Station
 3	37201	Leidschendam-Voorburg 	Rozenboomlaan
 3	37202	Leidschendam-Voorburg 	Rozenboomlaan
-3	37211	Den Haag              	Leidschendam-Voorburg
-3	37212	Den Haag              	Leidschendam-Voorburg
+3	37211	Leidschendam-Voorburg 	Leidschendam-Voorburg
+3	37212	Leidschendam-Voorburg 	Leidschendam-Voorburg
 3	37411	Leidschendam-Voorburg 	Bruijnings Ingenhoeslaan
 3	37412	Leidschendam-Voorburg 	Bruijnings Ingenhoeslaan
 3	37505	Leidschendam-Voorburg 	Mgr. van Steelaan
 3	37506	Leidschendam-Voorburg 	Mgr. van Steelaan
-3	37507	Den Haag              	Spinozalaan
-3	37508	Den Haag              	Spinozalaan
-3	37509	Den Haag              	Koningin Julianaplein
-3	37510	Den Haag              	Koningin Julianaplein
-3	37601	Den Haag              	Voorburg 't Loo
-3	37602	Den Haag              	Voorburg 't Loo
-3	37603	Den Haag              	Prinses Beatrixlaan
-3	37604	Den Haag              	Prinses Beatrixlaan
+3	37507	Leidschendam-Voorburg 	Spinozalaan
+3	37508	Leidschendam-Voorburg 	Spinozalaan
+3	37509	Leidschendam-Voorburg 	Koningin Julianaplein
+3	37510	Leidschendam-Voorburg 	Koningin Julianaplein
+3	37601	Leidschendam-Voorburg 	Voorburg 't Loo
+3	37602	Leidschendam-Voorburg 	Voorburg 't Loo
+3	37603	Leidschendam-Voorburg 	Prinses Beatrixlaan
+3	37604	Leidschendam-Voorburg 	Prinses Beatrixlaan
 3	37610	Leidschendam-Voorburg 	Rodelaan
-3	37611	Den Haag              	Voorburg 't Loo
 3	37611	Leidschendam-Voorburg 	Voorburg 't Loo
-3	37612	Den Haag              	Voorburg 't Loo
 3	37612	Leidschendam-Voorburg 	Voorburg 't Loo
-3	37701	Den Haag              	Station Mariahoeve
-3	37702	Den Haag              	Station Mariahoeve
+3	37701	Leidschendam-Voorburg 	Station Mariahoeve
+3	37702	Leidschendam-Voorburg 	Station Mariahoeve
 3	37703	Leidschendam-Voorburg 	Essesteijn
 3	37704	Leidschendam-Voorburg 	Essesteijn
 3	37705	Leidschendam-Voorburg 	Elzendreef
@@ -911,7 +906,7 @@ company	ovcid	city             	name
 3	38018	Zoetermeer            	Buytenparklaan
 3	38101	Zoetermeer            	Voorweg Laag
 3	38102	Zoetermeer            	Voorweg Laag
-3	38103	Den Haag              	Centrum - West
+3	38103	Den Haag              	Centrum-West
 3	38104	Den Haag              	Centrum-West
 3	38105	Delft                 	Stadhuis
 3	38106	Delft                 	Stadhuis
@@ -944,24 +939,20 @@ company	ovcid	city             	name
 3	39003	Den Haag              	Brasserskade
 3	39004	Den Haag              	Brasserskade
 3	39005	Delft                 	Nieuwe Plantage
-3	39005	Den Haag              	Nieuwe Plantage
 3	39006	Delft                 	Nieuwe Plantage
-3	39006	Den Haag              	Nieuwe Plantage
 3	39007	Delft                 	Wateringsevest
 3	39008	Delft                 	Wateringsevest
 3	39009	Leidschendam-Voorburg 	Prinsenhof
 3	39010	Leidschendam-Voorburg 	Prinsenhof
-3	39017	Den Haag              	Delft Station
-3	39018	Den Haag              	Delft Station
+3	39017	Delft                 	Delft Station
+3	39018	Delft                 	Delft Station
 3	39101	Delft                 	Krakeelpolderweg
 3	39102	Delft                 	Krakeelpolderweg
 3	39103	Den Haag              	Hovenpassage
 3	39104	Den Haag              	Hovenpassage
 3	39105	Den Haag              	Aart van der Leeuwlaan
 3	39106	Den Haag              	Aart van der Leeuwlaan
-3	39107	Den Haag              	Diepenbrockstraat
 3	39107	Westland              	Diepenbrockstraat
-3	39108	Den Haag              	Diepenbrockstraat
 3	39108	Westland              	Diepenbrockstraat
 3	39109	Den Haag              	Van der Slootsingel
 3	39110	Den Haag              	Van der Slootsingel
@@ -974,8 +965,8 @@ company	ovcid	city             	name
 3	39117	Den Haag              	Abtswoudsepark
 3	39501	Leidschendam-Voorburg 	Leidsenhage
 3	39502	Leidschendam-Voorburg 	Leidsenhage
-3	39503	Den Haag              	Burgemeester Kolfschotenlaan
-3	39504	Den Haag              	Burgemeester Kolfschotenlaan
+3	39503	Leidschendam-Voorburg 	Burgemeester Kolfschotenlaan
+3	39504	Leidschendam-Voorburg 	Burgemeester Kolfschotenlaan
 3	39505	Leidschendam-Voorburg 	Kastelenring
 3	39506	Leidschendam-Voorburg 	Kastelenring
 3	39507	Leidschendam-Voorburg 	Dillenburgsingel
@@ -1011,8 +1002,7 @@ company	ovcid	city             	name
 3	39811	Den Haag              	Scholekstersingel
 3	39812	Den Haag              	Gruttosingel
 3	39813	Den Haag              	Gruttosingel
-3	39814	Den Haag              	Nootdorp Centrum
-3	39815	Den Haag              	Nootdorp Centrum
+3	39814	Pijnacker-Nootdorp    	Nootdorp Centrum
 3	39815	Pijnacker-Nootdorp    	Nootdorp Centrum
 3	39817	Den Haag              	Guirlande
 3	39819	Den Haag              	Gruttosingel
