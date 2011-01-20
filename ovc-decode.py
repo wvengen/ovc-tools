@@ -41,7 +41,7 @@ if __name__ == '__main__':
 			cardid = getbits(data[0:4], 0, 4*8)
 			cardtype = OvcCardType(getbits(data[0x10:0x36], 18*8+4, 19*8))
 			validuntil = OvcDate(getbits(data[0x10:0x36], 11*8+6, 13*8+4))
-			s = 'OV-Chipkaart id 0x%06x, %s, valid until %s'%(cardid, cardtype, validuntil)
+			s = 'OV-Chipkaart id %d, %s, valid until %s'%(cardid, cardtype, validuntil)
 			if cardtype==2:
 				birthdate = OvcBcdDate(getbits(mfclassic_getsector(data, 22), 14*8, 18*8))
 				s += ', birthdate %s'%birthdate
