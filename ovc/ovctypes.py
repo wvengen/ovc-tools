@@ -81,13 +81,13 @@ class OvcTransfer(int):
 class OvcCompany(int):
 	# most companies can be figured out using
 	# https://www.ov-chipkaart.nl/webwinkel/aanvragen/aanvragen_pkaart/kaartaanvragen/?ovbedrijf=<number>
-	# pending: Breng (Novio), GVU, Hermes, Qbuzz, Syntus
+	# pending: Breng (Novio), GVU, Hermes, Qbuzz
 	# company 25 is used for credit machines at Albert Heijn, Primera and in Hermes busses
 	# company 26 has been seen as well
 	_strs = {
 		 0: 'TLS',         1: 'Connexxion',  2: 'GVB',        3: 'HTM',
 		 4: 'NS',          5: 'RET',                          7: 'Veolia',
-		 8: 'Arriva',
+		 8: 'Arriva',      9: 'Syntus',
 	}
 	def __new__(cls, x, **kwargs):
 		return int.__new__(cls, x)
@@ -98,7 +98,7 @@ class OvcCompany(int):
 class OvcSubscription(int):
 	_strs = {
 		 2: {
- 			0x0bbd: 'Supplement fiets'
+ 			0x0bbd: 'Supplement fiets',
 		}, 
 		 4: {
 			0x00af: 'vrijweek09', #could also be kortweek09
