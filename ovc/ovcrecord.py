@@ -210,8 +210,7 @@ class OvcClassicTransaction(OvcRecord):
 		# subscriptions
 		( '0a 00 e0 00 MB BB B0 00 00 II IU UU RR RO OO OW WW WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -2, 'O': -1}),
 		( '0a 02 e0 00 MB BB B0 00 00 II IU UU 2a RR RO OO WW WW WW WW WW WW WW WW WW WW WW WW WW WW', {'R': -1} ),
-	        ( '0a 02 e0 00 MB BB B0 00 00 II IU UU 3e RR R0 00 OO OW WW WW WW WW WW WW WW WW WW WW WW WW WW W', {'R': -1} ),
-		( '0a 02 e0 02 MB BB B0 00 00 II IU UU 3e RR R0 00 c2 0W WW WW WW WW WW WW WW WW WW WW WW WW WW W', {'R': -1} ),
+	        ( '0a 02 e0 0? MB BB B0 00 00 II IU UU 3e RR R0 00 OO OW WW WW WW WW WW WW WW WW WW WW WW WW WW W', {'R': -1} ),
 	] 
 
 	def __init__(self, data):
@@ -222,7 +221,6 @@ class OvcClassicTransaction(OvcRecord):
 		if self.amount is None and self.data[0] not in ['\x0a', '\x20']: self.amount = '       '
 		if self.data[0]=='\x08': self.transfer = 'credit   '
 		if self.data[0]=='\x20': self.transfer = 'add product      '
-		if self.validfrom and not self.validto: self.validto='          '
 
 	def __str__(self):
 		s = '[%02x_%02x_%02x_%x] '%(ord(self.data[0]),ord(self.data[1]),ord(self.data[2]),ord(self.data[3])>>4)
