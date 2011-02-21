@@ -33,7 +33,8 @@ def tsv_each(filename):
 		if not fields:
 			fields = data
 		else:
-			yield dict(zip(fields, data))
+			# remove empty fields
+			yield dict(filter(lambda x:x[1]!='', zip(fields, data)))
 	f.close()
 
 def readfile(filename):

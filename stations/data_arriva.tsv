@@ -1,5 +1,8 @@
 # Arriva
 company	ovcid	city    	name
+# train
+8	 263	        	Groningen
+8	 745	        	Zwaagwesteinde
 # bus
 8	1062	Purmerend	Cornelis Edelmanstraat 
 8	1155	Amsterdam	Prins Hendrikkade
