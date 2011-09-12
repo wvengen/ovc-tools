@@ -101,6 +101,7 @@ class OvcSubscription(int):
  			0x0bbd: 'Supplement fiets',
 		}, 
 		 4: {
+			0x0019: 'Voordeelurenabonnement (2 jarig)',
 			0x00af: 'vrijweek09', #could also be kortweek09
 			0x00b1: 'kortweek09', #could also be vrijweek09
 			0x00ca: 'Reizen op saldo (2e klas)',
