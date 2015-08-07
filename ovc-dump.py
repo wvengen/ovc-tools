@@ -100,8 +100,15 @@ if __name__ == '__main__':
 			printhex(data[0xfb0:0xfd0], 0xfb0)
 			printhex(data[0xfd0:0xff0], 0xfd0)
 
+		elif len(data) == 64:	# mifare ultralight GVB
+			# general card info
+			printhex(data[0x00:0x10], 0);
+
+			for chunk in range(0x10, len(data)-0x10, 0x10):
+                            printhex(data[chunk:chunk+0x10], chunk)
+
 		else:
-			sys.stderr.write('%s: expected 4096 bytes of ov-chipkaart dump file\n'%fn)
+			sys.stderr.write('%s: expected 4096 or 64 bytes of ov-chipkaart dump file\n'%fn)
 			sys.exit(2)
 
 

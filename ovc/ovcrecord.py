@@ -231,17 +231,17 @@ class OvcClassicTransaction(OvcRecord):
 class OvcULTransaction(OvcRecord):
 	'''Transaction on a mifare ultralight card (only GVB tested)'''
 	_fieldchars = [
-		('id',        'I',   14, OvcTransactionId),
+		('id',        'I',   15, OvcTransactionId),
 		('date',      'T',   25, OvcDatetime),
 		('company',   'M',    4, OvcCompany),
 		('transfer',  'Y',    3, OvcTransfer),
 		('station',   'S',   16, OvcStation),
-		('unkU',      'U', None, FixedWidthHex),
 		('unkV',      'V', None, FixedWidthHex),
 		('unkW',      'W', None, FixedWidthHex),
 		('unkQ',      '?', None, FixedWidthHex),
+		('unkU',      'U', None, FixedWidthHex),
 	]
 	_templates = [
-		('?I II UU UU YT TT TT TV VV VV VV VV VV VV VV VV', {'I':1, 'T':-1}),
+                ('?I II UU UM YT TT TT TV VV VV VV VV VV VV VV VV', {'I':1, 'T':-1}),
 	]
 

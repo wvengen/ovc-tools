@@ -88,7 +88,6 @@ if __name__ == '__main__':
 				if data[chunk:chunk+2] == '\xff\xff': continue
 				# print data
 				t = OvcULTransaction(data[chunk:chunk+0x10])
-				t.company = OvcCompany(2)
 				print t
 
 		else:
